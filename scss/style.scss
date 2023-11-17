@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600&display=swap');
+
+/* default settings */
+$font-base: 'Noto Sans KR', sans-serif;
+
+/*Reset CSS*/
+a {
+
+    text-decoration: none;
+}
+ul,li {
+    list-style: none;
+}
 
 body {
     margin: 0;
@@ -6,6 +19,7 @@ body {
 .wrap {}
 .floationg-top {}
 header {
+    font-family: $font-base;
     height: 100px;
     border: 1px solid #000;
 }
