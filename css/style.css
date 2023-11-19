@@ -21,7 +21,6 @@ body {
 .inner {
   width: 1380px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 /* header section */
@@ -30,12 +29,10 @@ header {
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
   height: 80px;
-  border: 1px solid #000;
   border-bottom: 1px solid #eee;
 }
 header .header-wrap {
   width: 100%;
-  border: 1px solid red;
   align-items: center;
   height: 80px;
   display: flex;
@@ -47,15 +44,17 @@ header .gnb-bg {
   left: 0;
   width: 100%;
   height: 280px;
-  background: red;
+  z-index: 100;
+  background: #fff;
+  border-top: 1px solid #eee;
 }
 header .bg-overlay {
   display: none;
-  position: absolute;
-  top: 360px;
+  position: fixed;
+  top: 80px;
   left: 0;
   width: 100%;
-  height: calc(500vh - 360px);
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2588235294);
 }
 header h1.logo {
@@ -103,11 +102,13 @@ header ul.gnb > li > a:hover::before {
   width: 100%;
 }
 header ul.gnb .sub {
+  display: none;
   position: absolute;
   left: 0;
   top: 100%;
   width: 100%;
   margin-top: 20px;
+  z-index: 1000;
 }
 header ul.gnb .sub > li {
   margin: 20px 0;
@@ -150,6 +151,7 @@ header .trigger span:nth-of-type(3) {
 main {
   height: 700px;
   border: 1px solid red;
+  background: orange;
 }
 
 section.totalcare {
