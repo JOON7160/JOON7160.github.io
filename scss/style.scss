@@ -2,6 +2,7 @@
 
 /* default settings */
 $font-base: 'Noto Sans KR', sans-serif;
+$font-base-size: 16px;
 $base-color: #333;
 $primary-color: #0D81A0;
 $gnb-color: #aaa;
@@ -175,17 +176,106 @@ main {
         }
         .main-guide {
             flex: 3;
-            border: 1px solid red;
             .main-search {
-                border: 1px solid #000;
+                margin-bottom: 40px;
+                label {
+                    display: flex;
+                    align-items: center;
+                    font-size: $font-bold + 5;
+                    font-weight: 500;
+                    color: $primary-color;
+                    width: 100%;
+                    padding:10px 0;
+                    box-sizing: border-box;
+                    .search-wrap {
+                        display: flex;
+                        border: 2px solid $primary-color;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-left: 10px;
+                    }
+                    input[type=text] {
+                        flex: 9;
+                        padding: 15px;
+                        outline: none;
+                        border: none;
+                        &::placeholder {
+                            font-size: 15px;
+                        }
+                    }
+                    .search-btn {
+                        flex: 0.1;
+                        border: none;
+                        cursor: pointer;
+                        background: $primary-color  url(/img/search_btn.png)no-repeat center center;
+                        outline: none;
+                        margin: -4px;
+                        padding: 30px;
+                    }
+                }
+                .hashtag {
+                    text-align: center;
+                    >a {
+                        margin: 10px;
+                        font-size: $font-base-size;
+                        color: #79939A;
+                        font-weight: normal;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
             .main-items {
+                background: #fff;
+                box-shadow: 0 0 20px 5px #0000002c;
+                border-radius: 10px;
+                overflow: hidden;
                 display: flex;
                 flex-wrap: wrap;
-                border: 1px solid #000;
                 .item {
-                    flex: 1 300px;
-                    border: 1px solid green;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1 200px;
+                    gap: 10px;
+                    padding: 20px;
+                    border-bottom: 1px solid #eee;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 50%;
+                        background: #eee;
+                    }
+                    &-img {
+                        img {
+                            width: 100%;
+                        }
+                        transition: 0.3s;
+                    }
+                    &-txt {
+                        .title {
+                            display: block;
+                            font-weight: 500;
+                        }
+                        .txt {
+                            font-size: 13px;
+                            color: #777;
+                        }
+                    }
+                    &:hover {
+                        .item-img {
+                            transform: translateY(-5px);
+                        }
+                        background: #F5FCF8;
+                        color: #3B865D;
+                    }
                 }
             }
         }

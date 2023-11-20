@@ -170,19 +170,106 @@ main .main-info .main-slider .swiper {
 }
 main .main-info .main-guide {
   flex: 3;
-  border: 1px solid red;
 }
 main .main-info .main-guide .main-search {
-  border: 1px solid #000;
+  margin-bottom: 40px;
+}
+main .main-info .main-guide .main-search label {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0D81A0;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+main .main-info .main-guide .main-search label .search-wrap {
+  display: flex;
+  border: 2px solid #0D81A0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 10px;
+}
+main .main-info .main-guide .main-search label input[type=text] {
+  flex: 9;
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+main .main-info .main-guide .main-search label input[type=text]::placeholder {
+  font-size: 15px;
+}
+main .main-info .main-guide .main-search label .search-btn {
+  flex: 0.1;
+  border: none;
+  cursor: pointer;
+  background: #0D81A0 url(/img/search_btn.png) no-repeat center center;
+  outline: none;
+  margin: -4px;
+  padding: 30px;
+}
+main .main-info .main-guide .main-search .hashtag {
+  text-align: center;
+}
+main .main-info .main-guide .main-search .hashtag > a {
+  margin: 10px;
+  font-size: 16px;
+  color: #79939A;
+  font-weight: normal;
+}
+main .main-info .main-guide .main-search .hashtag > a:hover {
+  text-decoration: underline;
 }
 main .main-info .main-guide .main-items {
+  background: #fff;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1725490196);
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #000;
 }
 main .main-info .main-guide .main-items .item {
-  flex: 1 300px;
-  border: 1px solid green;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 200px;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+main .main-info .main-guide .main-items .item::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background: #eee;
+}
+main .main-info .main-guide .main-items .item-img {
+  transition: 0.3s;
+}
+main .main-info .main-guide .main-items .item-img img {
+  width: 100%;
+}
+main .main-info .main-guide .main-items .item-txt .title {
+  display: block;
+  font-weight: 500;
+}
+main .main-info .main-guide .main-items .item-txt .txt {
+  font-size: 13px;
+  color: #777;
+}
+main .main-info .main-guide .main-items .item:hover {
+  background: #F5FCF8;
+  color: #3B865D;
+}
+main .main-info .main-guide .main-items .item:hover .item-img {
+  transform: translateY(-5px);
 }
 main .main-category {
   margin-top: 50px;
