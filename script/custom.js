@@ -9,4 +9,15 @@ $(function(){
         $('.sub').fadeOut('fast')
         $('.bg-overlay').hide()
         })
+        //swiper 
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+        
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        });
 })

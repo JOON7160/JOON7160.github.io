@@ -21,6 +21,7 @@ body {
 .inner {
   width: 1380px;
   margin: 0 auto;
+  border: 1px solid #000;
 }
 
 /* header section */
@@ -148,10 +149,60 @@ header .trigger span:nth-of-type(3) {
   top: 100%;
 }
 
+/* main section */
 main {
+  margin: 60px 0;
   height: 700px;
   border: 1px solid red;
   background: orange;
+}
+main .main-info {
+  display: flex;
+  gap: 20px;
+}
+main .main-info .main-slider {
+  flex: 2;
+  border: 1px solid #000;
+}
+main .main-info .main-slider .swiper {
+  width: 600px;
+  height: 300px;
+}
+main .main-info .main-guide {
+  flex: 3;
+  border: 1px solid red;
+}
+main .main-info .main-guide .main-search {
+  border: 1px solid #000;
+}
+main .main-info .main-guide .main-items {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+}
+main .main-info .main-guide .main-items .item {
+  flex: 1 300px;
+  border: 1px solid green;
+}
+main .main-category {
+  margin-top: 50px;
+  border: 1px solid #000;
+}
+main .main-category .category-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+main .main-category .category-wrap .title {
+  border: 1px solid #000;
+}
+main .main-category .category-wrap .icon-list {
+  border: 1px solid #000;
+  display: flex;
+}
+main .main-category .category-wrap .all-menu {
+  border: 1px solid #000;
 }
 
 section.totalcare {
