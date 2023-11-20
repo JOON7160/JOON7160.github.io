@@ -151,9 +151,7 @@ header .trigger span:nth-of-type(3) {
 
 /* main section */
 main {
-  margin: 60px 0;
-  height: 700px;
-  border: 1px solid red;
+  margin: 20px 0;
 }
 main .main-info {
   display: flex;
@@ -187,10 +185,10 @@ main .main-info .main-slider .swiper-pagination-bullet-active {
   background-color: #0E81A0;
 }
 main .main-info .main-guide {
-  flex: 3;
+  flex: 2;
 }
 main .main-info .main-guide .main-search {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 main .main-info .main-guide .main-search label {
   display: flex;
@@ -255,7 +253,7 @@ main .main-info .main-guide .main-items .item {
   align-items: center;
   flex: 1 200px;
   gap: 10px;
-  padding: 20px;
+  padding: 50px 30px;
   border-bottom: 1px solid #eee;
 }
 main .main-info .main-guide .main-items .item::after {
