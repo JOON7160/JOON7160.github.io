@@ -30,6 +30,10 @@ body {
     margin: 0 auto;
     border: 1px solid #000;
 }
+.sub-txt {
+    color: #888;
+}
+.more {}
 .wrap {}
 .floationg-top {}
 /* header section */
@@ -410,8 +414,139 @@ main {
     }
 
 section.totalcare {
-    height: 700px;
-    border: 1px solid blue;
+    .totalcare-wrap {
+        border: 1px solid #000;
+    }
+    .totalcare-content {
+        padding: 0 10px;
+        display: flex;
+        .consult {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            flex: 2;
+            &-img {
+                img {}
+            }
+            &-apply {
+                p {
+                    font-size: 24px;
+                    font-weight: bold;
+                    span {
+                        color: #0D81A0;
+                    }
+                }
+                .sub-txt {
+                    display: block;
+                    margin-bottom: 40px;
+                }
+                .applying {
+                    color: #0D81A0;
+                    font-size: 17px;
+                    border: 1px solid #0D81A0;
+                    padding: 12px 15px;
+                    border-radius: 15px;
+                    box-sizing: border-box;
+                    &:hover {
+                        background: #0D81A0;
+                        border: 1px solid transparent;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .api-list {
+            flex: 1;
+            .txt-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                h3 {
+                    margin: 0;
+                }
+                .more {
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 22px;
+                    border: 1px solid #888;
+                    border-radius: 50%;
+                    .fa-solid {
+                        color: #888;
+                    }
+                    &:hover {
+                        background: #3B865D;
+                        border: 1px solid #3B865D;
+                        .fa-solid {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .list-items {
+                li {
+                    border-bottom: 1px solid #888;
+                    &:nth-of-type(3) {
+                        border: none;
+                    }
+                    margin: 40px 0;
+                    a {
+                        font-size: 18px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                        &::before {
+                            content: "";
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            background: #000;
+                            display: inline-block;
+                            margin-right: 5px;
+                            vertical-align: middle;
+                        }
+                    }
+                    > .sub-txt {
+                        width: 500px;
+                        font-size: 15px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+    .totalcare-guide {
+        display: flex;
+        background: #3B8286;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+        height: 100px;
+        .title {
+            margin: 0;
+            padding-top: 60px;
+            box-sizing: border-box;
+            border-radius: 60px 60px 0 0;
+            text-align: center;
+            color: #fff;
+            width: 125px;
+            height: 130px;
+            background: #418F93;
+            b {
+                display: block;
+            }
+        }
+        .guide-list {
+            border: 1px solid #000;
+            width: 100%;
+            display: flex;
+            li {
+                a {}
+            }
+        }
+    }
+
 }
 section.simulation {
     height: 500px;

@@ -24,6 +24,10 @@ body {
   border: 1px solid #000;
 }
 
+.sub-txt {
+  color: #888;
+}
+
 /* header section */
 header {
   position: relative;
@@ -397,11 +401,128 @@ main .main-category .all-menu::before {
   top: 10%;
 }
 
-section.totalcare {
-  height: 700px;
-  border: 1px solid blue;
+section.totalcare .totalcare-wrap {
+  border: 1px solid #000;
 }
-
+section.totalcare .totalcare-content {
+  padding: 0 10px;
+  display: flex;
+}
+section.totalcare .totalcare-content .consult {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex: 2;
+}
+section.totalcare .totalcare-content .consult-apply p {
+  font-size: 24px;
+  font-weight: bold;
+}
+section.totalcare .totalcare-content .consult-apply p span {
+  color: #0D81A0;
+}
+section.totalcare .totalcare-content .consult-apply .sub-txt {
+  display: block;
+  margin-bottom: 40px;
+}
+section.totalcare .totalcare-content .consult-apply .applying {
+  color: #0D81A0;
+  font-size: 17px;
+  border: 1px solid #0D81A0;
+  padding: 12px 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+section.totalcare .totalcare-content .consult-apply .applying:hover {
+  background: #0D81A0;
+  border: 1px solid transparent;
+  color: #fff;
+}
+section.totalcare .totalcare-content .api-list {
+  flex: 1;
+}
+section.totalcare .totalcare-content .api-list .txt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+section.totalcare .totalcare-content .api-list .txt-row h3 {
+  margin: 0;
+}
+section.totalcare .totalcare-content .api-list .txt-row .more {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 22px;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+section.totalcare .totalcare-content .api-list .txt-row .more .fa-solid {
+  color: #888;
+}
+section.totalcare .totalcare-content .api-list .txt-row .more:hover {
+  background: #3B865D;
+  border: 1px solid #3B865D;
+}
+section.totalcare .totalcare-content .api-list .txt-row .more:hover .fa-solid {
+  color: #fff;
+}
+section.totalcare .totalcare-content .api-list .list-items li {
+  border-bottom: 1px solid #888;
+  margin: 40px 0;
+}
+section.totalcare .totalcare-content .api-list .list-items li:nth-of-type(3) {
+  border: none;
+}
+section.totalcare .totalcare-content .api-list .list-items li a {
+  font-size: 18px;
+}
+section.totalcare .totalcare-content .api-list .list-items li a:hover {
+  text-decoration: underline;
+}
+section.totalcare .totalcare-content .api-list .list-items li a::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #000;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+section.totalcare .totalcare-content .api-list .list-items li > .sub-txt {
+  width: 500px;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+section.totalcare .totalcare-guide {
+  display: flex;
+  background: #3B8286;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  height: 100px;
+}
+section.totalcare .totalcare-guide .title {
+  margin: 0;
+  padding-top: 60px;
+  box-sizing: border-box;
+  border-radius: 60px 60px 0 0;
+  text-align: center;
+  color: #fff;
+  width: 125px;
+  height: 130px;
+  background: #418F93;
+}
+section.totalcare .totalcare-guide .title b {
+  display: block;
+}
+section.totalcare .totalcare-guide .guide-list {
+  border: 1px solid #000;
+  width: 100%;
+  display: flex;
+}
 section.simulation {
   height: 500px;
   border: 1px solid gold;
