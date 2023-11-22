@@ -414,6 +414,9 @@ section.totalcare .totalcare-content .consult {
   align-items: center;
   flex: 2;
 }
+section.totalcare .totalcare-content .consult-img img {
+  display: block;
+}
 section.totalcare .totalcare-content .consult-apply p {
   font-size: 24px;
   font-weight: bold;
@@ -468,8 +471,8 @@ section.totalcare .totalcare-content .api-list .txt-row .more:hover .fa-solid {
   color: #fff;
 }
 section.totalcare .totalcare-content .api-list .list-items li {
-  border-bottom: 1px solid #888;
-  margin: 40px 0;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.1333333333);
+  margin: 20px 0;
 }
 section.totalcare .totalcare-content .api-list .list-items li:nth-of-type(3) {
   border: none;
@@ -498,31 +501,85 @@ section.totalcare .totalcare-content .api-list .list-items li > .sub-txt {
   text-overflow: ellipsis;
 }
 section.totalcare .totalcare-guide {
+  position: relative;
   display: flex;
   background: #3B8286;
-  border-radius: 0 0 20px 20px;
-  overflow: hidden;
+  border-radius: 20px 0 20px 20px;
+  width: 100%;
   height: 100px;
 }
 section.totalcare .totalcare-guide .title {
+  transform: translateY(-30px);
+  background: #3B8286;
   margin: 0;
   padding-top: 60px;
-  box-sizing: border-box;
   border-radius: 60px 60px 0 0;
   text-align: center;
   color: #fff;
-  width: 125px;
-  height: 130px;
+  width: 100px;
+  height: 70px;
   background: #418F93;
 }
 section.totalcare .totalcare-guide .title b {
   display: block;
 }
 section.totalcare .totalcare-guide .guide-list {
-  border: 1px solid #000;
+  flex: 9;
   width: 100%;
   display: flex;
 }
+section.totalcare .totalcare-guide .guide-list li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+section.totalcare .totalcare-guide .guide-list li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 1px;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.2980392157);
+}
+section.totalcare .totalcare-guide .guide-list li:last-child::after {
+  display: none;
+}
+section.totalcare .totalcare-guide .guide-list li:nth-of-type(1) a::before {
+  background: url(/img/gd01.png) no-repeat center center;
+}
+section.totalcare .totalcare-guide .guide-list li:nth-of-type(2) a::before {
+  background: url(/img/gd02.png) no-repeat center center;
+}
+section.totalcare .totalcare-guide .guide-list li:nth-of-type(3) a::before {
+  background: url(/img/gd03.png) no-repeat center center;
+}
+section.totalcare .totalcare-guide .guide-list li:nth-of-type(4) a::before {
+  background: url(/img/gd04.png) no-repeat center center;
+}
+section.totalcare .totalcare-guide .guide-list li:nth-of-type(5) a::before {
+  background: url(/img/gd05.png) no-repeat center center;
+}
+section.totalcare .totalcare-guide .guide-list li:nth-of-type(6) a::before {
+  background: url(/img/gd06.png) no-repeat center center;
+}
+section.totalcare .totalcare-guide .guide-list li a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  transition: 0.3s;
+}
+section.totalcare .totalcare-guide .guide-list li a:hover {
+  color: #C4E161;
+}
+section.totalcare .totalcare-guide .guide-list li a::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 50%;
+  margin: 10px 0;
+}
+
 section.simulation {
   height: 500px;
   border: 1px solid gold;
