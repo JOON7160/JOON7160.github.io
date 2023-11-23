@@ -734,7 +734,6 @@ section.notice .notice-wrap {
   width: 100%;
   display: flex;
   gap: 50px;
-  border: 1px solid #000;
 }
 section.notice .notice-wrap .notice-content {
   flex: 3;
@@ -743,6 +742,9 @@ section.notice .notice-wrap .notice-content .txt-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+section.notice .notice-wrap .notice-content .txt-row h2 {
+  margin: 0;
 }
 section.notice .notice-wrap .notice-content .txt-row h2 > span {
   color: #2A6079;
@@ -774,6 +776,7 @@ section.notice .notice-wrap .notice-content .notice-tab li {
   position: relative;
   padding: 10px 15px;
   cursor: pointer;
+  color: #777;
 }
 section.notice .notice-wrap .notice-content .notice-tab li.active {
   color: #0D81A0;
@@ -789,11 +792,42 @@ section.notice .notice-wrap .notice-content .notice-tab li.active::after {
 }
 section.notice .notice-wrap .notice-content .notice-tab .info .txt {
   display: none;
-  height: 200px;
-  border: 1px solid red;
 }
 section.notice .notice-wrap .notice-content .notice-tab .info .txt.active {
   display: block;
+}
+section.notice .notice-wrap .notice-content .notice-tab .info .txt li {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+section.notice .notice-wrap .notice-content .notice-tab .info .txt li a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding-left: 10px;
+}
+section.notice .notice-wrap .notice-content .notice-tab .info .txt li a .data {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section.notice .notice-wrap .notice-content .notice-tab .info .txt li a .data:hover {
+  color: #0D81A0;
+}
+section.notice .notice-wrap .notice-content .notice-tab .info .txt li a .date {
+  color: #777;
+}
+section.notice .notice-wrap .notice-content .notice-tab .info .txt li a::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 5px;
+  height: 5px;
+  vertical-align: middle;
+  background: rgba(0, 0, 0, 0.5529411765);
+  border-radius: 50%;
 }
 section.notice .notice-wrap .notice-img {
   border-radius: 5px;

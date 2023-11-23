@@ -741,18 +741,19 @@ section.recommendation {
     }
 }
 section.notice {
-
     .notice-wrap {
         width: 100%;
         display: flex;
         gap: 50px;
-        border: 1px solid #000;
         .notice-content {
             flex: 3;
             .txt-row {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                h2 {
+                    margin: 0;
+                }
                 h2 > span {
                     color: #2A6079;
                 }
@@ -770,6 +771,7 @@ section.notice {
                     position: relative;
                     padding: 10px 15px;
                     cursor: pointer;
+                    color: #777;
                     &.active {
                         color: #0D81A0;
                         &::after {
@@ -786,10 +788,41 @@ section.notice {
                 .info {
                     .txt {
                         display: none;
-                        height: 200px;
-                        border: 1px solid red;
                         &.active {
                             display: block;
+                        }
+                        li {
+                            border-bottom: 1px solid #eee;
+                            padding: 15px 0;
+                            a {
+                                position: relative;
+                                display: flex;
+                                justify-content: space-between;
+                                font-size: 15px;
+                                padding-left: 10px;
+                                .data {
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    &:hover {
+                                        color: $primary-color;
+                                    }
+                                }
+                                .date {
+                                    color: #777;
+                                }
+                                &::before {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    content: "";
+                                    width: 5px;
+                                    height: 5px;
+                                    vertical-align: middle;
+                                    background: #0000008d;
+                                    border-radius: 50%;
+                                }
+                            }
                         }
                     }
                 }
