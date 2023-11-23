@@ -55,7 +55,7 @@ $(function(){
         recommendSwiper.controller.control = pagingSwiper;
 
         //notice tab
-        $('section.notice .notice-wrap .notice-content > .notice-tab  li').click(function(){
+        $('.notice-tab .tab li').click(function(){
             $(this).addClass('active')
             $(this).siblings().removeClass('active')
             $('#' + $(this).attr('data-tab')).addClass('active')

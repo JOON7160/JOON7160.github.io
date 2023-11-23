@@ -733,7 +733,7 @@ section.recommendation .swiper-control .recommend-pagination .swiper-pagination-
 section.notice .notice-wrap {
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 50px;
   border: 1px solid #000;
 }
 section.notice .notice-wrap .notice-content {
@@ -765,9 +765,10 @@ section.notice .notice-wrap .notice-content .txt-row .notice-btn:hover {
 section.notice .notice-wrap .notice-content .txt-row .notice-btn:hover .fa-solid {
   color: #fff;
 }
-section.notice .notice-wrap .notice-content .notice-tab > .tab {
+section.notice .notice-wrap .notice-content .notice-tab .tab {
   display: flex;
-  border: 1px solid gold;
+  margin: 10px 0;
+  border-bottom: 2px solid #eee;
 }
 section.notice .notice-wrap .notice-content .notice-tab li {
   position: relative;

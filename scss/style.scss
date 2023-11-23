@@ -745,7 +745,7 @@ section.notice {
     .notice-wrap {
         width: 100%;
         display: flex;
-        gap: 10px;
+        gap: 50px;
         border: 1px solid #000;
         .notice-content {
             flex: 3;
@@ -761,9 +761,10 @@ section.notice {
                 }
             }
             .notice-tab {
-                > .tab {
+                .tab {
                     display: flex;
-                    border: 1px solid gold;
+                    margin: 10px 0;
+                    border-bottom: 2px solid #eee;
                 }
                 li {
                     position: relative;
