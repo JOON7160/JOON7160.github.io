@@ -55,14 +55,11 @@ body {
         }
     }
 }
-// .more {}
-// .wrap {}
 // .floationg-top {
 //     display: none;
 // }
 /* header section */
 header {
-    display: none;
     position: relative;
     font-family: $font-base;
     width: 100%;
@@ -189,7 +186,6 @@ header {
 }
 /* main section */
 main {
-    display: none;
     margin: 20px 0;
     .main-info {
         display: flex;
@@ -440,7 +436,6 @@ main {
     }
 
 section.totalcare {
-    display: none;
     .totalcare-wrap {
         border: 1px solid #000;
     }
@@ -613,13 +608,11 @@ section.totalcare {
 
 }
 section.simulation {
-    display: none;
     height: 500px;
     border: 1px solid gold;
 }
 section.recommendation {
-    display: none;
-    border: 1px solid green;
+    margin: 50px 0;
     .txt-row {
         display: flex;
         justify-content: space-between;
@@ -741,6 +734,9 @@ section.recommendation {
     }
 }
 section.notice {
+    .inner {
+        border: 1px solid transparent;
+    }
     .notice-wrap {
         display: flex;
         width: 100%;
@@ -751,11 +747,12 @@ section.notice {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin: 20px 0;
                 h2 {
                     margin: 0;
-                }
-                h2 > span {
-                    color: #2A6079;
+                    span {
+                        color: #2A6079;
+                    }
                 }
                 .notice-btn {
                     @include morebtn();
@@ -829,7 +826,7 @@ section.notice {
             }
         }
         .notice-img {
-            border-radius: 5px;
+            border-radius: 10px;
             overflow: hidden;
             flex: 2;
             a {
