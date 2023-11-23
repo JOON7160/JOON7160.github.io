@@ -62,11 +62,6 @@ $(function(){
         var pagingSwiper = new Swiper (".recommend-list", {
             slidesPerView: 5,
             spaceBetween: 10,
-            breakpoints: {
-                639: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                }},
             pagination: {
                 el: ".fraction-pagination",
                 type: "fraction",
