@@ -1,0 +1,183 @@
+@media screen and (max-width: 640px) {
+    .inner {
+        width: 100%;
+        padding: 0 10px;
+    }
+    header {
+        ul.gnb {
+            display: none;
+        }
+    }
+    main {
+        .main-info {
+            flex-direction: column;
+            .main-slider {
+                width: 100%;
+                .main-swiper {
+                    width: 100% !important;
+                    height: auto;
+                    margin: 0;
+                }
+            }
+            .main-guide {
+                .main-search {
+                    margin: 30px 0;
+                    label {
+                        span {
+                            display: none;
+                        }
+                    }
+                    .hashtag {
+                        display: none;
+                    }
+                }
+                .main-items {
+                    .item {
+                        flex: 1 300px;
+                        justify-content: start;
+                        padding: 15px;
+                        &-txt {
+                            .txt {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-category {
+            &::before {
+                margin: 0 2px;
+            }
+            .category-wrap {
+                flex-direction: column;
+                align-items: start;
+                .title {
+                    margin: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+                .icon-list {
+                    margin: 25px 0;
+                    overflow-x: scroll;
+                    &::-webkit-scrollbar {
+                        height: 1px;
+                        background-color: #000;
+                        &-thumb {
+                            background-color: red;
+                        }
+                    }
+                    li {
+                        flex: 1;
+                        padding: 0;
+                        > a {
+                            width: 70px;
+                        }
+                    }
+                }
+                .all-menu {
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 10px 0 10px;
+                    line-height: 0;
+                    height: auto;
+                    width: auto;
+                    padding: 15px;
+                    &::before {
+                        position: static;
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+    /* totalcare section */
+    section.totalcare {
+        .totalcare-content {
+            flex-direction: column;
+            padding: 0;
+            .consult {
+                text-align: center;
+                width: 100%;
+                gap: 0;
+                flex-direction: column;
+                &-apply {
+                    p {
+                        font-weight: 400;
+                        margin: 10px 0;
+                    }
+                    .sub-txt {
+                        margin-bottom: 20px;
+                    }
+                    .applying {
+                        display: inline-block;
+                    }
+                }
+            }
+            .api-list {
+                margin: 40px;
+                .list-items {
+                    li {
+                        .sub-txt {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .totalcare-guide {
+            flex-direction: column;
+            height: auto;
+            .title {
+                display: flex;
+                justify-content:flex-end;
+                flex-direction: row-reverse;
+                width: 100%;
+                height: auto;
+                border-radius: 10px 10px 0 0;
+                padding: 15px;
+                text-align: left;
+                margin: 0;
+                b {
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+            }
+            .guide-list {
+                flex-wrap: wrap;
+                li {
+                    flex: 1 200px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    section.notice {
+        .notice-wrap {
+            flex-direction: column;
+        }
+    } 
+    footer {
+        margin-top: 50px;
+        .f-btn {
+            .f-wrap {
+                flex-direction: column-reverse;
+            }
+            .f-link {
+                margin-bottom: 25px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+
+            }
+        }
+        
+    }
+}

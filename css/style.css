@@ -318,12 +318,14 @@ main .main-info .main-guide .main-search {
 main .main-info .main-guide .main-search label {
   display: flex;
   align-items: center;
-  font-size: 24px;
-  font-weight: 500;
-  color: #0D81A0;
   width: 100%;
   padding: 10px 0;
   box-sizing: border-box;
+}
+main .main-info .main-guide .main-search label span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0D81A0;
 }
 main .main-info .main-guide .main-search label .search-wrap {
   display: flex;
@@ -629,7 +631,6 @@ section.totalcare .totalcare-content .api-list .list-items li > .sub-txt {
   text-overflow: ellipsis;
 }
 section.totalcare .totalcare-guide {
-  position: relative;
   display: flex;
   background: #3B8286;
   border-radius: 20px 0 20px 20px;
@@ -962,6 +963,9 @@ section.notice .notice-wrap .notice-img a img {
 }
 
 /* footer section */
+footer .f-top {
+  border: 1px solid #eee;
+}
 footer .f-top .inner {
   display: flex;
 }
