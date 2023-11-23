@@ -742,8 +742,8 @@ section.recommendation {
 }
 section.notice {
     .notice-wrap {
-        width: 100%;
         display: flex;
+        width: 100%;
         gap: 50px;
         .notice-content {
             flex: 3;
