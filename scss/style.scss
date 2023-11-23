@@ -11,6 +11,10 @@ $gnb-font-bold : 500;
 $gnb-font-normal : 18px;
 
 /*Reset CSS*/
+* {
+    font-family:  $font-base;
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
     color: $base-color;
@@ -172,7 +176,7 @@ main {
         gap: 30px;
         .main-slider {
             position: relative;
-            .main-swipder {
+            .main-swiper {
                 width: 500px;
                 height: 100%;
                 .main-slide {
@@ -189,7 +193,7 @@ main {
                     }
                 }
             }
-            .swiper-pagination {
+            .main-pagination {
                 position: absolute;
                 bottom: -5%;
                 left: 10px;
@@ -472,7 +476,7 @@ section.totalcare {
                     width: 20px;
                     height: 20px;
                     text-align: center;
-                    line-height: 22px;
+                    line-height: 17px;
                     border: 1px solid #888;
                     border-radius: 50%;
                     .fa-solid {
@@ -537,7 +541,7 @@ section.totalcare {
             text-align: center;
             color: #fff;
             width: 100px;
-            height: 70px;
+            height: 130px;
             background: #418F93;
             b {
                 display: block;
@@ -607,8 +611,121 @@ section.simulation {
     border: 1px solid gold;
 }
 section.recommendation {
-    height: 200px;
     border: 1px solid green;
+    .txt-row {
+        margin-bottom: 20px;
+    }
+    .recommend-list {
+        width: 100%;
+        box-shadow: 0 0 10px #00000054;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .swiper-slide {
+        .app {
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            padding: 30px;
+            height: 250px;
+            &::after {
+                content: "";
+                position: absolute;
+                right: -5px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 80%;
+                background: #d9e7e4;
+            }
+            &-top {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                &-box {
+                    display: inline-block;
+                    width: 55px;
+                    height: 55px;
+                    box-shadow: 0 0 10px #00000048;
+                    border-radius: 5px;
+                }
+                &-tt {
+                    font-size: 16px;
+                    font-weight: 400;
+                    display: inline-block;
+                }
+            }
+            &-info {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                word-break: keep-all;
+                word-wrap: break-word;
+                color: #2c503e;
+                font-size: $font-base-size;
+                font-weight: 200;
+                height: 70px;
+                overflow: hidden;
+            }
+            &-tag {
+                .tag-info {
+                    border: 1px solid #0E81A0;
+                    font-size: 13px;
+                    font-weight: 200;
+                    color: #0E81A0;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                }
+                
+            }
+        }
+        &:nth-of-type(1) .app-top-box {
+            background: url(/img/app-icon1.png)no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-of-type(2) .app-top-box {
+            background: url(/img/app-icon2.jpg)no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-of-type(3) .app-top-box {
+            background: url(/img/app-icon3.png)no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-of-type(4) .app-top-box {
+            background: url(/img/app-icon4.png)no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-of-type(5) .app-top-box {
+            background: url(/img/app-icon5.png)no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-of-type(6) .app-top-box {
+            background: url(/img/app-icon6.png)no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-of-type(7) .app-top-box {
+            background: url(/img/app-icon7.png)no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-of-type(8) .app-top-box {
+            background: url(/img/app-icon8.jpg)no-repeat center center;
+            background-size: cover;
+        }
+    }
+    .swiper-control {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        .recommend-pagination {
+            width: 90%;
+            z-index: 1000;
+        .swiper-pagination-progressbar-fill {
+            background: $primary-color;
+        }
+    }
+    }
 }
 section.notice {
     height: 400px;

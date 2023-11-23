@@ -9,8 +9,8 @@ $(function(){
         $('.sub').fadeOut('fast')
         $('.bg-overlay').hide()
         })
-        //swiper 
-        const swiper = new Swiper('.swiper', {
+        //main swiper 
+        const mainswiper = new Swiper('.main-swiper', {
             spaceBetween: 30,
             effect: "fade",
             // Optional parameters
@@ -22,7 +22,33 @@ $(function(){
             },
             // If we need pagination
             pagination: {
-            el: '.swiper-pagination',
+            el: '.main-pagination',
             },
         });
+
+        var recommendSwiper = new Swiper(".recommend-list", {
+            pagination: {
+            el: ".recommend-pagination",
+            type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+        });
+        var pagingSwiper = new Swiper (".recommend-list", {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            pagination: {
+                el: ".fraction-pagination",
+                type: "fraction",
+            },
+            loop: true,
+        });
+        recommendSwiper.controller.control = pagingSwiper;
 })
