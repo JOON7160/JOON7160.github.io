@@ -62,6 +62,7 @@ body {
 // }
 /* header section */
 header {
+    display: none;
     position: relative;
     font-family: $font-base;
     width: 100%;
@@ -188,6 +189,7 @@ header {
 }
 /* main section */
 main {
+    display: none;
     margin: 20px 0;
     .main-info {
         display: flex;
@@ -438,6 +440,7 @@ main {
     }
 
 section.totalcare {
+    display: none;
     .totalcare-wrap {
         border: 1px solid #000;
     }
@@ -610,10 +613,12 @@ section.totalcare {
 
 }
 section.simulation {
+    display: none;
     height: 500px;
     border: 1px solid gold;
 }
 section.recommendation {
+    display: none;
     border: 1px solid green;
     .txt-row {
         display: flex;
@@ -736,8 +741,72 @@ section.recommendation {
     }
 }
 section.notice {
-    height: 400px;
-    border: 1px solid pink;
+
+    .notice-wrap {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        border: 1px solid #000;
+        .notice-content {
+            flex: 3;
+            .txt-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h2 > span {
+                    color: #2A6079;
+                }
+                .notice-btn {
+                    @include morebtn();
+                }
+            }
+            .notice-tab {
+                > .tab {
+                    display: flex;
+                    border: 1px solid gold;
+                }
+                li {
+                    position: relative;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    &.active {
+                        color: #0D81A0;
+                        &::after {
+                            content: "";
+                                position: absolute;
+                                bottom: -2px;
+                                left: 0;
+                                width: 100%;
+                                height: 2px;
+                                background: #0D81A0;
+                        }
+                    }
+                }
+                .info {
+                    .txt {
+                        display: none;
+                        height: 200px;
+                        border: 1px solid red;
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .notice-img {
+            border-radius: 5px;
+            overflow: hidden;
+            flex: 2;
+            a {
+                display: block;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 footer {
     height: 200px;

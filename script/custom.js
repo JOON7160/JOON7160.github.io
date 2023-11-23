@@ -1,4 +1,5 @@
 $(function(){
+    // gnb 
     $('.gnb li').mouseover(function(){
         $('.gnb-bg').slideDown('fast')
         $('.sub').fadeIn()
@@ -9,6 +10,7 @@ $(function(){
         $('.sub').fadeOut('fast')
         $('.bg-overlay').hide()
         })
+
         //main swiper 
         const mainswiper = new Swiper('.main-swiper', {
             spaceBetween: 30,
@@ -25,7 +27,7 @@ $(function(){
             el: '.main-pagination',
             },
         });
-
+        //recommendation swiper
         var recommendSwiper = new Swiper(".recommend-list", {
             pagination: {
             el: ".recommend-pagination",
@@ -51,4 +53,12 @@ $(function(){
             loop: true,
         });
         recommendSwiper.controller.control = pagingSwiper;
+
+        //notice tab
+        $('section.notice .notice-wrap .notice-content > .notice-tab  li').click(function(){
+            $(this).addClass('active')
+            $(this).siblings().removeClass('active')
+            $('#' + $(this).attr('data-tab')).addClass('active')
+            $('#' + $(this).attr('data-tab')).siblings().removeClass('active')
+        })
 })
