@@ -1,4 +1,12 @@
 $(function(){
+    //menu-btn
+    $('.trigger').click(function(){
+        $('.sub, .gnb-bg, .bg-overlay').slideUp('fast')
+        $('.m-menu').addClass('active')
+    })
+    $('.close-btn').click(function(){
+        $('.m-menu').removeClass('active')
+    })
     //floating-top 
     $(window).scroll(function(){
         if ($(window).scrollTop() > 100) {

@@ -278,6 +278,7 @@
 
  .swiper-button-next,
  .swiper-button-prev {
+    cursor: pointer;
      /* position: absolute;
      top: var(--swiper-navigation-top-offset, 50%);
      width: calc(var(--swiper-navigation-size)/ 44 * 27);
