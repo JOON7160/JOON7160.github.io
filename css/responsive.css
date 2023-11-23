@@ -6,6 +6,15 @@
   header ul.gnb {
     display: none;
   }
+  .m-menu .menu-list {
+    width: 100%;
+  }
+  .m-menu .menu-list li {
+    border: 1px solid #000;
+  }
+  .m-menu .menu-list li .depth1 {
+    display: none;
+  }
   main .main-info {
     flex-direction: column;
   }
@@ -40,6 +49,7 @@
   main .main-category .category-wrap {
     flex-direction: column;
     align-items: start;
+    overflow: hidden;
   }
   main .main-category .category-wrap .title {
     margin: 0;
@@ -48,15 +58,8 @@
     display: none;
   }
   main .main-category .category-wrap .icon-list {
+    border: 1px solid #000;
     margin: 25px 0;
-    overflow-x: scroll;
-  }
-  main .main-category .category-wrap .icon-list::-webkit-scrollbar {
-    height: 1px;
-    background-color: #000;
-  }
-  main .main-category .category-wrap .icon-list::-webkit-scrollbar-thumb {
-    background-color: red;
   }
   main .main-category .category-wrap .icon-list li {
     flex: 1;
