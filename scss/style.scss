@@ -29,14 +29,39 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+/* coommon css */
+html {scroll-behavior: smooth;}
 .inner {
     width: 1380px;
     margin: 0 auto;
-    border: 1px solid #000;
 }
 .sub-txt {
     color: #888;
 }
+.floating-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #0000006f;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+    .fa-angle-up {
+        display: block;
+        text-align: center;
+    }
+    &.active {
+        opacity: 1;
+    }
+}
+
+/* mixins */
 @mixin morebtn {
     width: 20px;
     height: 20px;
@@ -66,9 +91,6 @@ body {
     border-radius: 50%;
 
 }
-// .floationg-top {
-//     display: none;
-// }
 /* header section */
 header {
     position: relative;
@@ -445,7 +467,7 @@ main {
             }
         }
     }
-
+    /* totalcare section */
 section.totalcare {
     .totalcare-wrap {
         border: 1px solid #000;
@@ -618,10 +640,12 @@ section.totalcare {
     }
 
 }
+    /*simulation section */
 section.simulation {
     height: 500px;
     border: 1px solid gold;
 }
+    /*recommendation section */
 section.recommendation {
     margin: 50px 0;
     .txt-row {
@@ -744,10 +768,8 @@ section.recommendation {
     }
     }
 }
+    /*notice section */
 section.notice {
-    .inner {
-        border: 1px solid transparent;
-    }
     .notice-wrap {
         display: flex;
         width: 100%;
@@ -850,6 +872,7 @@ section.notice {
         }
     }
 }
+    /* footer section */
 footer {
     height: 200px;
     border: 1px solid yellow;
@@ -878,6 +901,7 @@ footer {
         }
     }
     .f-btn {
+        font-size: 13px;
         width: 100%;
         background: #F6F6F6;
         padding: 30px;

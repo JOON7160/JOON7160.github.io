@@ -23,16 +23,44 @@ body {
   box-sizing: border-box;
 }
 
+/* coommon css */
+html {
+  scroll-behavior: smooth;
+}
+
 .inner {
   width: 1380px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 .sub-txt {
   color: #888;
 }
 
+.floating-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4352941176);
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.floating-top .fa-angle-up {
+  display: block;
+  text-align: center;
+}
+.floating-top.active {
+  opacity: 1;
+}
+
+/* mixins */
 /* header section */
 header {
   position: relative;
@@ -406,6 +434,7 @@ main .main-category .all-menu::before {
   top: 10%;
 }
 
+/* totalcare section */
 section.totalcare .totalcare-wrap {
   border: 1px solid #000;
 }
@@ -585,11 +614,13 @@ section.totalcare .totalcare-guide .guide-list li a::before {
   margin: 10px 0;
 }
 
+/*simulation section */
 section.simulation {
   height: 500px;
   border: 1px solid gold;
 }
 
+/*recommendation section */
 section.recommendation {
   margin: 50px 0;
 }
@@ -723,9 +754,7 @@ section.recommendation .swiper-control .recommend-pagination .swiper-pagination-
   background: #0D81A0;
 }
 
-section.notice .inner {
-  border: 1px solid transparent;
-}
+/*notice section */
 section.notice .notice-wrap {
   display: flex;
   width: 100%;
@@ -839,6 +868,7 @@ section.notice .notice-wrap .notice-img a img {
   width: 100%;
 }
 
+/* footer section */
 footer {
   height: 200px;
   border: 1px solid yellow;
@@ -873,6 +903,7 @@ footer .f-top .inner li:nth-of-type(1) a {
   color: #0D81A0;
 }
 footer .f-btn {
+  font-size: 13px;
   width: 100%;
   background: #F6F6F6;
   padding: 30px;

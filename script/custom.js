@@ -1,4 +1,13 @@
 $(function(){
+    //floating-top 
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 100) {
+            $('.floating-top').addClass('active')
+        }
+        else {
+            $('.floating-top').removeClass('active')
+        }
+    })
     // gnb 
     $('.gnb li').mouseover(function(){
         $('.gnb-bg').slideDown('fast')
@@ -10,7 +19,6 @@ $(function(){
         $('.sub').fadeOut('fast')
         $('.bg-overlay').hide()
         })
-
         //main swiper 
         const mainswiper = new Swiper('.main-swiper', {
             spaceBetween: 30,
