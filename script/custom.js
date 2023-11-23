@@ -36,10 +36,10 @@ $(function(){
                 prevEl: ".swiper-button-prev",
             },
             loop: true,
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
         });
         var pagingSwiper = new Swiper (".recommend-list", {
             slidesPerView: 5,
