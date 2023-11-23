@@ -37,6 +37,24 @@ body {
 .sub-txt {
     color: #888;
 }
+@mixin morebtn {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 17px;
+    border: 1px solid #888;
+    border-radius: 50%;
+    .fa-solid {
+        color: #888;
+    }
+    &:hover {
+        background: #3B865D;
+        border: 1px solid #3B865D;
+        .fa-solid {
+            color: #fff;
+        }
+    }
+}
 // .more {}
 // .wrap {}
 // .floationg-top {
@@ -257,18 +275,18 @@ main {
                 }
             }
             .main-items {
+                display: flex;
                 background: #fff;
                 box-shadow: 0 0 20px 5px #0000002c;
                 border-radius: 10px;
                 overflow: hidden;
-                display: flex;
                 flex-wrap: wrap;
                 .item {
                     position: relative;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    flex: 1 200px;
+                    flex: 1 250px;
                     gap: 10px;
                     padding: 50px 30px;
                     border-bottom: 1px solid #eee;
@@ -473,22 +491,7 @@ section.totalcare {
                     margin: 0;
                 }
                 .more {
-                    width: 20px;
-                    height: 20px;
-                    text-align: center;
-                    line-height: 17px;
-                    border: 1px solid #888;
-                    border-radius: 50%;
-                    .fa-solid {
-                        color: #888;
-                    }
-                    &:hover {
-                        background: #3B865D;
-                        border: 1px solid #3B865D;
-                        .fa-solid {
-                            color: #fff;
-                        }
-                    }
+                    @include morebtn();
                 }
             }
             .list-items {
@@ -613,7 +616,13 @@ section.simulation {
 section.recommendation {
     border: 1px solid green;
     .txt-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 20px;
+        .reco-more {
+            @include morebtn();
+        }
     }
     .recommend-list {
         width: 100%;
@@ -623,7 +632,6 @@ section.recommendation {
     }
     .swiper-slide {
         .app {
-            border: 1px solid #000;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -715,9 +723,9 @@ section.recommendation {
         }
     }
     .swiper-control {
-        margin-top: 20px;
         display: flex;
         width: 100%;
+        margin-top: 20px;
         .recommend-pagination {
             width: 90%;
             z-index: 1000;

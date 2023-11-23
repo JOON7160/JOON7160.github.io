@@ -249,11 +249,11 @@ main .main-info .main-guide .main-search .hashtag > a:hover {
   text-decoration: underline;
 }
 main .main-info .main-guide .main-items {
+  display: flex;
   background: #fff;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1725490196);
   border-radius: 10px;
   overflow: hidden;
-  display: flex;
   flex-wrap: wrap;
 }
 main .main-info .main-guide .main-items .item {
@@ -261,7 +261,7 @@ main .main-info .main-guide .main-items .item {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 200px;
+  flex: 1 250px;
   gap: 10px;
   padding: 50px 30px;
   border-bottom: 1px solid #eee;
@@ -594,7 +594,28 @@ section.recommendation {
   border: 1px solid green;
 }
 section.recommendation .txt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+}
+section.recommendation .txt-row .reco-more {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 17px;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+section.recommendation .txt-row .reco-more .fa-solid {
+  color: #888;
+}
+section.recommendation .txt-row .reco-more:hover {
+  background: #3B865D;
+  border: 1px solid #3B865D;
+}
+section.recommendation .txt-row .reco-more:hover .fa-solid {
+  color: #fff;
 }
 section.recommendation .recommend-list {
   width: 100%;
@@ -603,7 +624,6 @@ section.recommendation .recommend-list {
   border-radius: 5px;
 }
 section.recommendation .swiper-slide .app {
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -691,9 +711,9 @@ section.recommendation .swiper-slide:nth-of-type(8) .app-top-box {
   background-size: cover;
 }
 section.recommendation .swiper-control {
-  margin-top: 20px;
   display: flex;
   width: 100%;
+  margin-top: 20px;
 }
 section.recommendation .swiper-control .recommend-pagination {
   width: 90%;
