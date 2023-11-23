@@ -843,3 +843,78 @@ footer {
   height: 200px;
   border: 1px solid yellow;
 }
+footer .f-top .inner {
+  display: flex;
+}
+footer .f-top .inner li {
+  margin: 15px;
+}
+footer .f-top .inner li a:hover {
+  text-decoration: underline;
+}
+footer .f-top .inner li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: #000;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1960784314);
+}
+footer .f-top .inner li:nth-of-type(1) {
+  margin-left: 0;
+}
+footer .f-top .inner li:nth-of-type(1)::before {
+  display: none;
+}
+footer .f-top .inner li:nth-of-type(1) a {
+  color: #0D81A0;
+}
+footer .f-btn {
+  width: 100%;
+  background: #F6F6F6;
+  padding: 30px;
+}
+footer .f-btn .f-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+footer .f-btn .f-wrap .f-info {
+  color: #777;
+}
+footer .f-btn .f-wrap .f-info address {
+  font-style: normal;
+}
+footer .f-btn .f-wrap .f-info ul {
+  margin: 10px 0;
+  display: flex;
+}
+footer .f-btn .f-wrap .f-info ul li {
+  color: #777;
+  margin-right: 10px;
+}
+footer .f-btn .f-wrap .f-info ul li::after {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 50%;
+  margin-left: 10px;
+  background: #777;
+}
+footer .f-btn .f-wrap .f-info ul li:last-child::after {
+  display: none;
+}
+footer .f-btn .f-wrap .f-info p {
+  margin: 0;
+}
+footer .f-btn .f-wrap .f-link .sns {
+  margin-bottom: 5px;
+}
+footer .f-btn .f-wrap .f-link .sns a {
+  margin: 0 2px;
+}
+footer .f-btn .f-wrap .f-link .mark {
+  text-align: right;
+}

@@ -55,6 +55,17 @@ body {
         }
     }
 }
+@mixin dot {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: #000;
+    border-radius: 50%;
+
+}
 // .floationg-top {
 //     display: none;
 // }
@@ -842,4 +853,79 @@ section.notice {
 footer {
     height: 200px;
     border: 1px solid yellow;
+    .f-top {
+        .inner {
+            display: flex;
+            li {
+                margin: 15px;
+                a:hover {
+                    text-decoration: underline;
+                }
+                &::before {
+                    @include dot;
+                    background: #00000032;
+                }
+                &:nth-of-type(1) {
+                    margin-left: 0;
+                    &::before {
+                        display: none;
+                    }
+                    a {
+                        color: #0D81A0;
+                    }
+                }
+            }
+        }
+    }
+    .f-btn {
+        width: 100%;
+        background: #F6F6F6;
+        padding: 30px;
+        .f-wrap {
+            display: flex;
+            justify-content: space-between;
+            .f-info {
+                color: #777;
+                address {
+                    font-style: normal;
+                }
+                ul {
+                    margin: 10px 0;
+                    display: flex;
+                    li {
+                        color: #777;
+                        margin-right: 10px;
+                        &::after {
+                            display: inline-block;
+                            content: "";
+                            width: 1px;
+                            height: 50%;
+                            margin-left: 10px;
+                            background: #777;
+                        }
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            .f-link {
+                .sns {
+                    margin-bottom: 5px;
+                    a {
+                        margin: 0 2px;
+                    }
+                }
+                .mark {
+                    text-align: right;
+                }
+            }
+
+        }
+    }
 }
