@@ -56,6 +56,7 @@
   main .main-category .category-wrap {
     flex-direction: column;
     align-items: start;
+    overflow: hidden;
   }
   main .main-category .category-wrap .title {
     margin: 0;
@@ -64,15 +65,7 @@
     display: none;
   }
   main .main-category .category-wrap .icon-list {
-    margin: 25px 0;
-    overflow-x: scroll;
-  }
-  main .main-category .category-wrap .icon-list::-webkit-scrollbar {
-    height: 1px;
-    background-color: #000;
-  }
-  main .main-category .category-wrap .icon-list::-webkit-scrollbar-thumb {
-    background-color: red;
+    border: 1px solid #000;
   }
   main .main-category .category-wrap .icon-list li {
     flex: 1;

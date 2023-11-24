@@ -442,10 +442,12 @@ main .main-category .category-wrap {
   justify-content: space-between;
 }
 main .main-category .category-wrap .title {
+  width: 80px;
   position: relative;
   color: #fff;
   font-size: 20px;
   line-height: 1.2em;
+  word-break: keep-all;
 }
 main .main-category .category-wrap .title::after {
   position: absolute;

@@ -469,10 +469,12 @@ main {
             align-items: center;
             justify-content: space-between;
             .title {
+                width: 80px;
                 position: relative;
                 color: #fff;
                 font-size: 20px;
                 line-height: 1.2em;
+                word-break: keep-all;
                 &::after {
                     position: absolute;
                     content: "";
