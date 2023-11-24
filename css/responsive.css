@@ -16,11 +16,61 @@
   .m-menu .menu-list {
     width: 100%;
   }
-  .m-menu .menu-list li {
-    border: 1px solid #000;
+  .m-menu .menu-list > li {
+    border-bottom: 1px solid rgba(119, 119, 119, 0.2392156863);
   }
-  .m-menu .menu-list li .depth1 {
+  .m-menu .menu-list > li h3 {
+    cursor: pointer;
+  }
+  .m-menu .menu-list > li h3::after {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    content: "\f106";
+    font-family: fontawesome;
+    font-size: 20px;
+  }
+  .m-menu .menu-list > li h3.active::after {
+    transform: rotate(180deg);
+  }
+  .m-menu .menu-list > li .depth1 {
     display: none;
+    border: 1px solid transparent;
+  }
+  .m-menu .menu-list > li .depth1 > li {
+    position: relative;
+    margin: 10px;
+    padding-left: 10px;
+  }
+  .m-menu .menu-list > li .depth1 > li::before {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: #0D81A0;
+    border-radius: 50%;
+  }
+  .m-menu .menu-list > li .depth1 > li > a {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 0;
+    text-align: left;
+    background: #fff;
+    color: #777;
+  }
+  .m-menu .menu-list > li .depth1 .depth2 {
+    display: none;
+  }
+  .m-menu .close-btn {
+    width: 50px;
+    height: 50px;
+    right: 10px;
   }
   main .main-info {
     flex-direction: column;

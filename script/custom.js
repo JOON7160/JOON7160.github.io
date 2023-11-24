@@ -16,6 +16,13 @@ $(function(){
             $('.top-btn').removeClass('active')
         }
     })
+    //m-menu
+    $('.menu-list li h3').click(function(){
+        $(this).toggleClass('active')
+        $(this).siblings().stop().slideToggle()
+        $(this).parent().siblings().children('h3').removeClass('active')
+        $(this).parent().siblings().children('h3').siblings().slideUp('fast')
+    })
     // gnb 
     $('.gnb li').mouseover(function(){
         $('.gnb-bg').slideDown('fast')
