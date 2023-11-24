@@ -53,19 +53,19 @@ $(function(){
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {
             slidesPerView: 5,
-            spaceBetween: 20,
-            loopedSlides: 7,
+            spaceBetween: 10,
+            loopedSlides: 5,
             centeredSlides: true,
-            // slideToClickedSlide : true,
+            slideToClickedSlide : true,
             loop: true,
             pagination: {
             el: ".simulation-pagination",
             type: "fraction",
             },
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: ".simul-btn-next",
                 prevEl: ".simul-btn-prev",
