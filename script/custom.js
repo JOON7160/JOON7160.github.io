@@ -9,11 +9,11 @@ $(function(){
     })
     //floating-top 
     $(window).scroll(function(){
-        if ($(window).scrollTop() > 100) {
-            $('.floating-top').addClass('active')
+        if ($(window).scrollTop() > 70) {
+            $('.top-btn').addClass('active')
         }
         else {
-            $('.floating-top').removeClass('active')
+            $('.top-btn').removeClass('active')
         }
     })
     // gnb 
