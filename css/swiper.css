@@ -78,7 +78,10 @@
      display: block;
  }
  .swiper-slide.simulation-slide {
-    width: 350px !important;
+ }
+ .swiper-slide.simulation-slide-active {
+    /* width: auto;
+    max-width: 350px !important; */
  }
 
  .swiper-slide-invisible-blank {
@@ -395,12 +398,7 @@
      left: 0;
      width: 100%;
  }
- .swiper-control {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
- .swiper-control .recommend-pagination,
+ /* .swiper-control .recommend-pagination,
 .swiper-control .fraction-pagination {
     position: static;
  }
@@ -408,7 +406,7 @@
  .swiper-control .swiper-button-prev.reco-btn-prev {
     position: static;
     display: inline-block;
-}
+} */
 .simulation-swiper-control {
     position: relative;
     display: flex;

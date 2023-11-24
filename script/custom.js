@@ -52,19 +52,24 @@ $(function(){
         });
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {
-            slidesPerView: 4,
-            spaceBetween: 0,
+            slidesPerView: 5,
+            spaceBetween: 20,
+            loopedSlides: 7,
             centeredSlides: true,
+            // slideToClickedSlide : true,
             loop: true,
             pagination: {
             el: ".simulation-pagination",
             type: "fraction",
-            clickable: true,
             },
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
             navigation: {
                 nextEl: ".simul-btn-next",
                 prevEl: ".simul-btn-prev",
-            },
+            },           
         });
         //recommendation swiper
         var recommendSwiper = new Swiper(".recommend-list", {
