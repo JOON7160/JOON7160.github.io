@@ -742,6 +742,82 @@ section.totalcare {
 section.simulation {
     height: 500px;
     border: 1px solid gold;
+    .title {
+        border: 1px solid #000;
+    }
+    .simulation-swiper {
+        margin-top: 30px;
+        border: 1px solid red;
+        overflow: visible;
+        .swiper-wrapper {
+            border: 1px solid green;
+            width: 100%;
+            .swiper-slide {
+                .simulation-content {
+                    border: 1px solid #000;
+                    .content-top {
+                        border: 1px solid #000;
+                        .circle {
+                            position: relative;
+                            width: 350px;
+                            height: 350px;
+                            border: 1px solid #000;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .pop {
+                            position: absolute;
+                            top: -15%;
+                            left: 50%;
+                            width: 50%;
+                            padding: 10px;
+                            text-align: center;
+                            transform: translate(-50%,-50%);
+                            background: #1D9D58;
+                            border-radius: 20px;
+                            color: #fff;
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                width: 20px;
+                                height: 20px;
+                                left: 50%;
+                                bottom: -10%;
+                                transform: translateX(-50%) rotate(45deg);
+                                background: #1D9D58;
+                                border-radius: 1px;
+                            }
+                        }
+                        .circle-more {
+                            @include morebtn();
+                            font-size: 25px;
+                            line-height: 45px;
+                            position: absolute;
+                            right: 0%;
+                            top: 55%;
+                            width: 50px;
+                            height: 50px;
+                            background: #fff;
+                            border: 1px solid transparent;
+                            box-shadow: 0 0 10px #00000039;
+                        }
+                    }
+                    .txt {
+                        width: 100;
+                        border: 1px solid #000;
+                        text-align: center;
+                        margin: 0;
+                        .title {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
     /*recommendation section */
 section.recommendation {

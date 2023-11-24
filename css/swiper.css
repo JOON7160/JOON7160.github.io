@@ -75,7 +75,10 @@
      height: 100%;
      position: relative;
      transition-property: transform;
-     display: block
+     display: block;
+ }
+ .swiper-slide.simulation-slide {
+    width: 350px !important;
  }
 
  .swiper-slide-invisible-blank {
@@ -289,7 +292,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     color: var(--swiper-navigation-color, var(--swiper-theme-color)) */
+     color: var(--swiper-navigation-color, var(--swiper-theme-color)) */ 
  }
 
  .swiper-button-next.swiper-button-disabled,
@@ -398,13 +401,27 @@
     justify-content: space-between;
  }
  .swiper-control .recommend-pagination,
-  .swiper-control .fraction-pagination {
+.swiper-control .fraction-pagination {
     position: static;
  }
- .swiper-control .swiper-button-next,
- .swiper-control .swiper-button-prev {
+ .swiper-control .swiper-button-next.reco-btn-next,
+ .swiper-control .swiper-button-prev.reco-btn-prev {
     position: static;
     display: inline-block;
+}
+.simulation-swiper-control {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+.swiper-button-next.simul-btn-next,
+.swiper-button-prev.simul-btn-prev {
+    width: 25px;
+    position: absolute;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid #000;
 }
 
  .swiper-pagination-bullets-dynamic {

@@ -50,6 +50,22 @@ $(function(){
             el: '.main-pagination',
             },
         });
+        //simulation swiper
+        var simulationswiper = new Swiper(".simulation-swiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+            el: ".simulation-pagination",
+            type: "fraction",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: ".simul-btn-next",
+                prevEl: ".simul-btn-prev",
+            },
+        });
         //recommendation swiper
         var recommendSwiper = new Swiper(".recommend-list", {
             pagination: {
@@ -57,8 +73,8 @@ $(function(){
             type: "progressbar",
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".reco-btn-next",
+                prevEl: ".reco-btn-prev",
             },
             loop: true,
             autoplay: {
