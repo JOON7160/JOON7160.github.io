@@ -18,10 +18,16 @@ $(function(){
     })
     //m-menu
     $('.menu-list li h3').click(function(){
+        if($(window).width() < 640) {
         $(this).toggleClass('active')
         $(this).siblings().stop().slideToggle()
         $(this).parent().siblings().children('h3').removeClass('active')
-        $(this).parent().siblings().children('h3').siblings().slideUp('fast')
+        $(this).parent().siblings().children('h3').siblings().slideUp() 
+        }
+        else {
+            
+        }
+        
     })
     // gnb 
     $('.gnb li').mouseover(function(){
@@ -102,13 +108,27 @@ $(function(){
             },
         });
         var pagingSwiper = new Swiper (".recommend-list", {
-            slidesPerView: 5,
+            slidesPerView: 2,
             spaceBetween: 10,
             pagination: {
                 el: ".fraction-pagination",
                 type: "fraction",
             },
             loop: true,
+            breakpoints: {
+                // 640: {
+                // slidesPerView: 4,
+                // spaceBetween: 20,
+                // },
+                // 768: {
+                // slidesPerView: 4,
+                // spaceBetween: 40,
+                // },
+                1024: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                },
+            },
         });
         recommendSwiper.controller.control = pagingSwiper;
 

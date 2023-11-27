@@ -101,15 +101,14 @@ html {
   display: flex;
 }
 .m-menu .menu-list li .depth1 > li {
-  flex: 1;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .m-menu .menu-list li .depth1 > li > a {
   display: inline-block;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  width: 100%;
+  width: 250px;
   height: 50px;
   line-height: 50px;
   background: #f6f6f6;
