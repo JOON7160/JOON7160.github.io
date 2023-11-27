@@ -54,6 +54,7 @@ $(function(){
             el: '.main-pagination',
             },
         });
+        // mainswiper control
         $('.main-swiper-play-btn').on('click',function(){
             if (mainswiper.autoplay.running) {
                 mainswiper.autoplay.stop();
@@ -71,7 +72,6 @@ $(function(){
             spaceBetween: 10,
             loopedSlides: 3,
             centeredSlides: true,
-            slideToClickedSlide : true,
             loop: true,
             pagination: {
             el: ".simulation-pagination",
@@ -96,9 +96,21 @@ $(function(){
                 },
                 1024: {
                 slidesPerView: 6,
-                spaceBetween: 10,
+                spaceBetween: -20,
                 },
             },           
+        });
+        // simulation swiper control
+        $('.simulation-swiper-play-btn').on('click',function(){
+            if (simulationswiper.autoplay.running) {
+                simulationswiper.autoplay.stop();
+                $('.simulation-swiper-play-btn .fa-play').show();
+                $('.simulation-swiper-play-btn .fa-pause').hide();
+            } else {
+                simulationswiper.autoplay.start()
+                $('.simulation-swiper-play-btn .fa-play').hide()
+                $('.simulation-swiper-play-btn .fa-pause').show()
+            }
         });
         //recommendation swiper
         var recommendSwiper = new Swiper(".recommend-list", {
@@ -131,6 +143,19 @@ $(function(){
                 },
             },
         });
+                // recommendation swiper control
+        $('.reco-swiper-play-btn').on('click',function(){
+            var isAutoplayRunning = recommendSwiper.autoplay.running || pagingSwiper.autoplay.running;
+            if (isAutoplayRunning) {
+                recommendSwiper.autoplay.stop();
+                pagingSwiper.autoplay.stop();
+            } else {
+                recommendSwiper.autoplay.start();
+                pagingSwiper.autoplay.start();
+            }
+            $('.reco-swiper-play-btn .fa-play').toggle(!isAutoplayRunning);
+            $('.reco-swiper-play-btn .fa-pause').toggle(isAutoplayRunning);
+        });
         var pagingSwiper = new Swiper (".recommend-list", {
             slidesPerView: 2,
             spaceBetween: 10,
@@ -156,8 +181,6 @@ $(function(){
             },
         });
         recommendSwiper.controller.control = pagingSwiper;
-        pagingSwiper.controller.control = recommendSwiper;
-
         //notice tab
         $('.notice-tab .tab li').click(function(){
             $(this).addClass('active')

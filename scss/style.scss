@@ -347,7 +347,7 @@ main {
                 margin-top: 5px;
                 padding-left: 10px;
                 border: 1px solid #000;
-                
+
                 display: flex;
                 align-items: center;
                 .main-pagination {
@@ -778,10 +778,8 @@ section.simulation {
         }
     }
     .simulation-swiper {
-        border: 1px solid red;
         overflow: visible;
         .simulation-swiper-control {
-            border: 1px solid #000;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -799,10 +797,11 @@ section.simulation {
             }
             .simulation-swiper-play-btn {
                 @include control-btn();
+                width: 20px;
+                height: 20px;
             }
         }
         .swiper-wrapper {
-            border: 1px solid gold;
             width: 100%;
             align-items: center;
             .swiper-slide {
@@ -864,10 +863,8 @@ section.simulation {
                         }
                     }
                     .txt {
-                        width: 100;
-                        // border: 1px solid #000;
+                        width: 100%;
                         text-align: center;
-                        margin: 0;
                         .title {
                             display: none;
                         }
@@ -881,6 +878,7 @@ section.simulation {
                     .simulation-content {
                         .content-top {
                             position: relative;
+                            margin-bottom: 20px;
                             .circle {
                                 position: relative;
                                 width: 350px;
@@ -1077,9 +1075,12 @@ section.recommendation {
             width: 90%;
             position: static;
         .swiper-pagination-progressbar-fill {
-            background: $primary-color;
+                background: $primary-color;
+            }
         }
-    }
+        .reco-swiper-play-btn {
+            @include control-btn();
+        }
     }
 }
     /*notice section */

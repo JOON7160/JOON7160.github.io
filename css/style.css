@@ -747,11 +747,9 @@ section.simulation .title h2 span {
   color: #0D81A0;
 }
 section.simulation .simulation-swiper {
-  border: 1px solid red;
   overflow: visible;
 }
 section.simulation .simulation-swiper .simulation-swiper-control {
-  border: 1px solid #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -775,12 +773,13 @@ section.simulation .simulation-swiper .simulation-swiper-control .simulation-swi
   width: 20px;
   color: rgba(0, 0, 0, 0.4666666667);
   cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 section.simulation .simulation-swiper .simulation-swiper-control .simulation-swiper-play-btn .fa-pause {
   display: none;
 }
 section.simulation .simulation-swiper .swiper-wrapper {
-  border: 1px solid gold;
   width: 100%;
   align-items: center;
 }
@@ -858,9 +857,8 @@ section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-
   color: #fff;
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .txt {
-  width: 100;
+  width: 100%;
   text-align: center;
-  margin: 0;
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .txt .title {
   display: none;
@@ -870,6 +868,7 @@ section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .content-top {
   position: relative;
+  margin-bottom: 20px;
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .content-top .circle {
   position: relative;
@@ -1088,6 +1087,17 @@ section.recommendation .swiper-control .recommend-pagination {
 }
 section.recommendation .swiper-control .recommend-pagination .swiper-pagination-progressbar-fill {
   background: #0D81A0;
+}
+section.recommendation .swiper-control .reco-swiper-play-btn {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 5px;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.4666666667);
+  cursor: pointer;
+}
+section.recommendation .swiper-control .reco-swiper-play-btn .fa-pause {
+  display: none;
 }
 
 /*notice section */
