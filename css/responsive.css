@@ -194,7 +194,7 @@
     position: relative;
   }
   section.simulation .simulation-swiper .simulation-swiper-control {
-    border: 1px solid #000;
+    justify-content: center;
   }
   section.simulation .simulation-swiper .simulation-swiper-control .swiper-button-next.simul-btn-next {
     position: absolute;
@@ -211,6 +211,9 @@
   }
   section.simulation .simulation-swiper .simulation-swiper-control .swiper-button-prev.simul-btn-prev::after {
     font-size: 45px;
+  }
+  section.simulation .simulation-swiper .simulation-swiper-control .simulation-swiper-play-btn {
+    margin-left: 10px;
   }
   section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .content-top {
     margin-bottom: 20px;
@@ -242,6 +245,9 @@
   }
   section.recommendation .swiper-control .recommend-pagination {
     width: 100%;
+  }
+  section.recommendation .swiper-control .reco-swiper-play-btn {
+    display: none;
   }
   section.notice .notice-wrap {
     flex-direction: column;

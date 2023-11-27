@@ -224,7 +224,7 @@
             margin-top: 50px;
             position: relative;
             .simulation-swiper-control {
-                border: 1px solid #000;
+                justify-content: center;
                 .swiper-button-next.simul-btn-next {
                     position: absolute;
                     top: 45%;
@@ -240,6 +240,9 @@
                     &::after {
                         font-size: 45px;
                     }
+                }
+                .simulation-swiper-play-btn {
+                    margin-left: 10px;
                 }
             }
             .swiper-wrapper {
@@ -287,6 +290,9 @@
                 }
                 .recommend-pagination {
                     width: 100%;
+                }
+                .reco-swiper-play-btn {
+                    display: none;
                 }
         }
     }

@@ -308,7 +308,6 @@ main .main-info .main-slider .main-swiper .main-slide a img {
 main .main-info .main-slider .swiper-control {
   margin-top: 5px;
   padding-left: 10px;
-  border: 1px solid #000;
   display: flex;
   align-items: center;
 }
