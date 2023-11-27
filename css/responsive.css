@@ -191,6 +191,47 @@
     flex: 1 200px;
     height: 100px;
   }
+  section.simulation .simulation-swiper {
+    margin-top: 50px;
+    position: relative;
+  }
+  section.simulation .simulation-swiper .simulation-swiper-control {
+    border: 1px solid #000;
+  }
+  section.simulation .simulation-swiper .simulation-swiper-control .swiper-button-next.simul-btn-next {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+  }
+  section.simulation .simulation-swiper .simulation-swiper-control .swiper-button-next.simul-btn-next::after {
+    font-size: 45px;
+  }
+  section.simulation .simulation-swiper .simulation-swiper-control .swiper-button-prev.simul-btn-prev {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+  }
+  section.simulation .simulation-swiper .simulation-swiper-control .swiper-button-prev.simul-btn-prev::after {
+    font-size: 45px;
+  }
+  section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .content-top {
+    margin-bottom: 20px;
+  }
+  section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .content-top .circle {
+    width: 100px;
+    height: 100px;
+  }
+  section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .content-top .pop {
+    padding: 0;
+  }
+  section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .txt {
+    font-size: 14px;
+  }
+  section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .content-top .circle {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4117647059);
+  }
   section.notice .notice-wrap {
     flex-direction: column;
   }

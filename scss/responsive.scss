@@ -229,6 +229,62 @@
             }
         }
     }
+    section.simulation {
+        .simulation-swiper {
+            margin-top: 50px;
+            position: relative;
+            .simulation-swiper-control {
+                border: 1px solid #000;
+                .swiper-button-next.simul-btn-next {
+                    position: absolute;
+                    top: 45%;
+                    right: 10px;
+                    &::after {
+                        font-size: 45px;
+                    }
+                }
+                .swiper-button-prev.simul-btn-prev {
+                    position: absolute;
+                    top: 45%;
+                    left: 10px;
+                    &::after {
+                        font-size: 45px;
+                    }
+                }
+            }
+            .swiper-wrapper {
+                .swiper-slide {
+                    .simulation-content {
+                        .content-top {
+                            margin-bottom: 20px;
+                            .circle {
+                                width: 100px;
+                                height: 100px;
+                            }
+                            .pop {
+                                padding: 0;
+                            }
+                        }
+                        .txt {
+                            font-size: 14px;
+                        }
+                    }
+                    &-active {
+                        .simulation-content {
+                            .content-top {
+                                .circle {
+                                    width: 250px;
+                                    height: 250px;
+                                    box-shadow: 0 0 10px #00000069;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
     section.notice {
         .notice-wrap {
             flex-direction: column;

@@ -52,7 +52,7 @@ $(function(){
         });
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10,
             loopedSlides: 3,
             centeredSlides: true,

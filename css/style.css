@@ -774,7 +774,7 @@ section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .content-top .pop {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
   position: absolute;
   top: -15%;
   left: 50%;
