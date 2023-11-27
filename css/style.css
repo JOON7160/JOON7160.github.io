@@ -293,7 +293,6 @@ main .main-info .main-slider {
 }
 main .main-info .main-slider .main-swiper {
   width: 500px;
-  height: 100%;
 }
 main .main-info .main-slider .main-swiper .main-slide a {
   display: block;
@@ -306,14 +305,34 @@ main .main-info .main-slider .main-swiper .main-slide a img {
   display: block;
   width: 100%;
 }
-main .main-info .main-slider .main-pagination {
-  position: absolute;
-  bottom: -5%;
-  left: 10px;
-  text-align-last: left;
+main .main-info .main-slider .swiper-control {
+  margin-top: 5px;
+  padding-left: 10px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
 }
-main .main-info .main-slider .main-pagination-bullet-active {
+main .main-info .main-slider .swiper-control .main-pagination {
+  position: static;
+  text-align: left;
+}
+main .main-info .main-slider .swiper-control .main-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+main .main-info .main-slider .swiper-control .main-pagination .swiper-pagination-bullet-active {
   background-color: #0E81A0;
+}
+main .main-info .main-slider .swiper-control .main-swiper-play-btn {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 5px;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.4666666667);
+  cursor: pointer;
+}
+main .main-info .main-slider .swiper-control .main-swiper-play-btn .fa-pause {
+  display: none;
 }
 main .main-info .main-guide {
   flex: 2;
@@ -732,6 +751,7 @@ section.simulation .simulation-swiper {
   overflow: visible;
 }
 section.simulation .simulation-swiper .simulation-swiper-control {
+  border: 1px solid #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -747,6 +767,17 @@ section.simulation .simulation-swiper .simulation-swiper-control .swiper-button-
 }
 section.simulation .simulation-swiper .simulation-swiper-control .simulation-pagination {
   position: static;
+}
+section.simulation .simulation-swiper .simulation-swiper-control .simulation-swiper-play-btn {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 5px;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.4666666667);
+  cursor: pointer;
+}
+section.simulation .simulation-swiper .simulation-swiper-control .simulation-swiper-play-btn .fa-pause {
+  display: none;
 }
 section.simulation .simulation-swiper .swiper-wrapper {
   border: 1px solid gold;

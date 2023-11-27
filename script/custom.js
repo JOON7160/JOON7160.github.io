@@ -44,17 +44,26 @@ $(function(){
         const mainswiper = new Swiper('.main-swiper', {
             spaceBetween: 30,
             effect: "fade",
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
             },
-            // If we need pagination
             pagination: {
             el: '.main-pagination',
             },
+        });
+        $('.main-swiper-play-btn').on('click',function(){
+            if (mainswiper.autoplay.running) {
+                mainswiper.autoplay.stop();
+                $('.main-swiper-play-btn .fa-play').show();
+                $('.main-swiper-play-btn .fa-pause').hide();
+            } else {
+                mainswiper.autoplay.start()
+                $('.main-swiper-play-btn .fa-play').hide()
+                $('.main-swiper-play-btn .fa-pause').show()
+            }
         });
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {

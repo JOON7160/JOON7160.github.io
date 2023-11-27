@@ -97,6 +97,18 @@ html {scroll-behavior: smooth;}
     border-radius: 50%;
 
 }
+@mixin control-btn {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 5px;
+    width: 20px;
+    color: #00000077;
+    cursor: pointer;
+    .fa-play {}
+    .fa-pause {
+        display: none;
+    }
+}
 /* header section */
 .m-menu {
     position: fixed;
@@ -316,7 +328,6 @@ main {
             position: relative;
             .main-swiper {
                 width: 500px;
-                height: 100%;
                 .main-slide {
                     a {
                         display:block;
@@ -329,15 +340,29 @@ main {
                             width: 100%;
                         }
                     }
+                    // border: 1px solid #000;
                 }
             }
-            .main-pagination {
-                position: absolute;
-                bottom: -5%;
-                left: 10px;
-                text-align-last: left;
-                &-bullet-active {
-                    background-color: #0E81A0;
+            .swiper-control {
+                margin-top: 5px;
+                padding-left: 10px;
+                border: 1px solid #000;
+                
+                display: flex;
+                align-items: center;
+                .main-pagination {
+                    position: static;
+                    text-align: left;
+                    .swiper-pagination-bullet {
+                        width: 10px;
+                        height: 10px;
+                        &-active {
+                            background-color: #0E81A0;
+                        }
+                    }
+                }
+                .main-swiper-play-btn {
+                    @include control-btn()
                 }
             }
         }
@@ -744,8 +769,6 @@ section.totalcare {
 }
     /*simulation section */
 section.simulation {
-    // height: 500px;
-    // border: 1px solid gold;
     overflow: hidden;
     .title {
         h2 {
@@ -758,6 +781,7 @@ section.simulation {
         border: 1px solid red;
         overflow: visible;
         .simulation-swiper-control {
+            border: 1px solid #000;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -772,6 +796,9 @@ section.simulation {
             }
             .simulation-pagination {
                 position: static;
+            }
+            .simulation-swiper-play-btn {
+                @include control-btn();
             }
         }
         .swiper-wrapper {
