@@ -101,10 +101,25 @@ $(function(){
                 nextEl: ".reco-btn-next",
                 prevEl: ".reco-btn-prev",
             },
+            loopedSlides: 5,
             loop: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+                // 640: {
+                // slidesPerView: 4,
+                // spaceBetween: 20,
+                // },
+                // 768: {
+                // slidesPerView: 4,
+                // spaceBetween: 40,
+                // },
+                1024: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                },
             },
         });
         var pagingSwiper = new Swiper (".recommend-list", {
@@ -114,6 +129,7 @@ $(function(){
                 el: ".fraction-pagination",
                 type: "fraction",
             },
+            loopedSlides: 5,
             loop: true,
             breakpoints: {
                 // 640: {
@@ -131,6 +147,7 @@ $(function(){
             },
         });
         recommendSwiper.controller.control = pagingSwiper;
+        pagingSwiper.controller.control = recommendSwiper;
 
         //notice tab
         $('.notice-tab .tab li').click(function(){
