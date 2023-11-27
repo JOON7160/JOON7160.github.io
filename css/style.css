@@ -444,7 +444,6 @@ main .main-category .category-wrap {
 }
 main .main-category .category-wrap .title {
   flex: 1;
-  width: 80px;
   position: relative;
   color: #fff;
   font-size: 20px;
@@ -457,14 +456,14 @@ main .main-category .category-wrap .title::after {
   width: 1px;
   height: 100%;
   top: 0;
-  right: -30%;
+  right: 0;
   display: inline-block;
   background: rgba(255, 255, 255, 0.4509803922);
 }
 main .main-category .category-wrap .icon-list {
   flex: 1;
   display: flex;
-  border: 1px solid #000;
+  padding: 0 10px;
 }
 main .main-category .category-wrap .icon-list li {
   border-radius: 10px;
@@ -503,7 +502,7 @@ main .main-category .category-wrap .icon-list li:nth-of-type(10) > a::before {
 main .main-category .category-wrap .icon-list li > a {
   position: relative;
   display: inline-block;
-  width: 110px;
+  width: 100px;
   height: 100px;
   line-height: 130px;
   text-align: center;
@@ -548,12 +547,13 @@ main .main-category .all-menu::before {
 section.totalcare .totalcare-content {
   padding: 0 10px;
   display: flex;
+  gap: 10px;
 }
 section.totalcare .totalcare-content .consult {
   display: flex;
-  gap: 50px;
+  gap: 10px;
   align-items: center;
-  flex: 2;
+  flex: 3;
 }
 section.totalcare .totalcare-content .consult-img img {
   display: block;
@@ -635,7 +635,7 @@ section.totalcare .totalcare-content .api-list .list-items li a::before {
   vertical-align: middle;
 }
 section.totalcare .totalcare-content .api-list .list-items li > .sub-txt {
-  width: 500px;
+  width: 450px;
   font-size: 15px;
   overflow: hidden;
   white-space: nowrap;

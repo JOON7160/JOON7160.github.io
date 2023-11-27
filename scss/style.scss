@@ -471,7 +471,6 @@ main {
             justify-content: space-between;
             .title {
                 flex: 1;
-                width: 80px;
                 position: relative;
                 color: #fff;
                 font-size: 20px;
@@ -483,7 +482,7 @@ main {
                     width: 1px;
                     height: 100%;
                     top: 0;
-                    right: -30%;
+                    right: 0;
                     display: inline-block;
                     background: #ffffff73;
                 }
@@ -491,7 +490,7 @@ main {
             .icon-list {
                 flex: 1;
                 display: flex;
-                border: 1px solid #000;
+                padding: 0 10px;
                 li {
                     border-radius: 10px;
                     overflow: hidden;
@@ -528,7 +527,7 @@ main {
                     >a {
                         position: relative;
                         display: inline-block;
-                        width: 110px;
+                        width: 100px;
                         height: 100px;
                         line-height: 130px;
                         text-align: center;
@@ -578,11 +577,12 @@ section.totalcare {
     .totalcare-content {
         padding: 0 10px;
         display: flex;
+        gap: 10px;
         .consult {
             display: flex;
-            gap: 50px;
+            gap: 10px;
             align-items: center;
-            flex: 2;
+            flex: 3;
             &-img {
                 img {
                     display: block;
@@ -652,7 +652,7 @@ section.totalcare {
                         }
                     }
                     > .sub-txt {
-                        width: 500px;
+                        width: 450px;
                         font-size: 15px;
                         overflow: hidden;
                         white-space: nowrap;
