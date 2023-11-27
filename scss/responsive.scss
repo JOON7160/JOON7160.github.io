@@ -275,6 +275,21 @@
             }
         }
     }
+    section.recommendation {
+            .swiper-control {
+                padding: 0 10px;
+                .swiper-button-next.reco-btn-next,
+                .swiper-button-prev.reco-btn-prev {
+                    display: none;
+                }
+                .fraction-pagination {
+                    display: none;
+                }
+                .recommend-pagination {
+                    width: 100%;
+                }
+        }
+    }
     section.notice {
         .notice-wrap {
             flex-direction: column;

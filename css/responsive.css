@@ -230,6 +230,19 @@
     height: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4117647059);
   }
+  section.recommendation .swiper-control {
+    padding: 0 10px;
+  }
+  section.recommendation .swiper-control .swiper-button-next.reco-btn-next,
+  section.recommendation .swiper-control .swiper-button-prev.reco-btn-prev {
+    display: none;
+  }
+  section.recommendation .swiper-control .fraction-pagination {
+    display: none;
+  }
+  section.recommendation .swiper-control .recommend-pagination {
+    width: 100%;
+  }
   section.notice .notice-wrap {
     flex-direction: column;
   }
