@@ -98,7 +98,6 @@ html {
   font-size: 20px;
 }
 .m-menu .menu-list li .depth1 {
-  border: 1px solid #000;
   display: flex;
 }
 .m-menu .menu-list li .depth1 > li {

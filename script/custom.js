@@ -52,9 +52,9 @@ $(function(){
         });
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {
-            slidesPerView: 5,
+            slidesPerView: 2,
             spaceBetween: 10,
-            loopedSlides: 5,
+            loopedSlides: 3,
             centeredSlides: true,
             slideToClickedSlide : true,
             loop: true,
@@ -69,6 +69,20 @@ $(function(){
             navigation: {
                 nextEl: ".simul-btn-next",
                 prevEl: ".simul-btn-prev",
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                },
             },           
         });
         //recommendation swiper
