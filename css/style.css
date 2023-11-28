@@ -492,7 +492,6 @@ main .main-category .category-wrap .title::after {
 }
 main .main-category .category-wrap .icon-list {
   flex: 1;
-  border: 1px solid #000;
   display: flex;
   padding: 0 5px;
 }
