@@ -49,6 +49,7 @@ html {scroll-behavior: smooth;}
     opacity: 0;
     transition: 0.5s;
     overflow: hidden;
+    z-index: 1000;
     a {
         display: flex;
         flex-direction: column;
@@ -65,6 +66,9 @@ html {scroll-behavior: smooth;}
     &.active {
         opacity: 1;
     }
+}
+section {
+    margin: 100px 0;
 }
 
 /* mixins */
@@ -444,12 +448,15 @@ main {
                         background: #eee;
                     }
                     &-img {
+                        flex: 1;
+                        // width: 20%;
                         img {
                             width: 100%;
                         }
                         transition: 0.3s;
                     }
                     &-txt {
+                        flex: 3;
                         .title {
                             display: block;
                             font-weight: 500;
@@ -1144,6 +1151,7 @@ section.notice {
                                 font-size: 15px;
                                 padding-left: 10px;
                                 .data {
+                                    flex: 8;
                                     text-overflow: ellipsis;
                                     overflow: hidden;
                                     white-space: nowrap;
@@ -1152,6 +1160,7 @@ section.notice {
                                     }
                                 }
                                 .date {
+                                    flex: 1;
                                     color: #777;
                                 }
                                 &::before {
@@ -1211,7 +1220,7 @@ footer {
             }
         }
     }
-    .f-btn {
+    .f-btm {
         font-size: 13px;
         width: 100%;
         background: #F6F6F6;

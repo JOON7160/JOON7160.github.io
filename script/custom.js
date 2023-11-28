@@ -31,13 +31,13 @@ $(function(){
     })
     // gnb 
     $('.gnb li').mouseover(function(){
-        $('.gnb-bg').slideDown('fast')
-        $('.sub').fadeIn()
+        $('.gnb-bg').stop().slideDown('fast')
+        $('.sub').stop().fadeIn()
         $('.bg-overlay').show()
     })
     $('.bg-overlay').mouseover(function(){
-        $('.gnb-bg').slideUp('fast')
-        $('.sub').fadeOut('fast')
+        $('.gnb-bg').stop().slideUp('fast')
+        $('.sub').stop().fadeOut('fast')
         $('.bg-overlay').hide()
         })
         //main swiper 
@@ -68,9 +68,9 @@ $(function(){
         });
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 10,
-            loopedSlides: 3,
+            loopedSlides: 2,
             centeredSlides: true,
             loop: true,
             pagination: {
@@ -157,7 +157,7 @@ $(function(){
             $('.reco-swiper-play-btn .fa-pause').toggle(isAutoplayRunning);
         });
         var pagingSwiper = new Swiper (".recommend-list", {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 10,
             pagination: {
                 el: ".fraction-pagination",
@@ -166,10 +166,10 @@ $(function(){
             loopedSlides: 5,
             loop: true,
             breakpoints: {
-                // 640: {
-                // slidesPerView: 4,
-                // spaceBetween: 20,
-                // },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
                 // 768: {
                 // slidesPerView: 4,
                 // spaceBetween: 40,
