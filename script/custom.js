@@ -91,12 +91,12 @@ $(function(){
                 spaceBetween: 20,
                 },
                 768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+                slidesPerView: 3,
+                spaceBetween: 30,
                 },
                 1024: {
-                slidesPerView: 6,
-                spaceBetween: -20,
+                slidesPerView: 5,
+                spaceBetween: 10,
                 },
             },           
         });
@@ -133,10 +133,10 @@ $(function(){
                 // slidesPerView: 4,
                 // spaceBetween: 20,
                 // },
-                // 768: {
-                // slidesPerView: 4,
-                // spaceBetween: 40,
-                // },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
                 1024: {
                 slidesPerView: 5,
                 spaceBetween: 10,
@@ -163,7 +163,7 @@ $(function(){
                 el: ".fraction-pagination",
                 type: "fraction",
             },
-            loopedSlides: 5,
+            loopedSlides: 1,
             loop: true,
             breakpoints: {
                 640: {

@@ -29,8 +29,10 @@ html {
 }
 
 .inner {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .sub-txt {
@@ -801,8 +803,8 @@ section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide .simulation-content .content-top .circle {
   position: relative;
-  width: 180px;
-  height: 180px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -880,8 +882,8 @@ section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simu
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .content-top .circle {
   position: relative;
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
   border-radius: 50%;
   overflow: hidden;
 }

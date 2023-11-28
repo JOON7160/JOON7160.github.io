@@ -30,10 +30,13 @@ body {
     box-sizing: border-box;
 }
 /* coommon css */
+
 html {scroll-behavior: smooth;}
 .inner {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .sub-txt {
     color: #888;
@@ -113,6 +116,7 @@ section {
         display: none;
     }
 }
+
 /* header section */
 .m-menu {
     position: fixed;
@@ -818,8 +822,8 @@ section.simulation {
                         position: relative;
                         .circle {
                             position: relative;
-                            width: 180px;
-                            height: 180px;
+                            max-width: 150px;
+                            max-height: 150px;
                             border-radius: 50%;
                             overflow: hidden;
                             img {
@@ -886,8 +890,8 @@ section.simulation {
                             margin-bottom: 20px;
                             .circle {
                                 position: relative;
-                                width: 350px;
-                                height: 350px;
+                                max-width: 350px;
+                                max-height: 350px;
                                 border-radius: 50%;
                                 overflow: hidden;
                                 img {
