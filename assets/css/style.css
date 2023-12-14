@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600&display=swap");
-/* default settings */
+/* default variables */
 /*Reset CSS*/
 * {
   font-family: "Noto Sans KR", sans-serif;
@@ -162,71 +162,37 @@ section {
   color: #fff;
 }
 
-header {
+.header {
   position: relative;
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
   height: 80px;
   border-bottom: 1px solid #eee;
 }
-.header .header-wrap {
-  width: 100%;
+.header__wrap {
+  display: flex;
   align-items: center;
+  width: 100%;
   height: 80px;
-  display: flex;
+  border: 1px solid #000;
 }
-header .gnb-bg {
-  display: none;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  height: 280px;
-  z-index: 900;
-  background: #fff;
-  border-top: 1px solid #eee;
-}
-header .bg-overlay {
-  display: none;
-  position: fixed;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 500;
-  background: rgba(0, 0, 0, 0.2588235294);
-}
-header h1.logo {
-  margin-right: auto;
-}
-header ul.gnb {
+
+.gnb {
   display: flex;
   height: 80px;
 }
-header ul.gnb > li {
+.gnb__item {
   position: relative;
   padding: 0 40px;
 }
-header ul.gnb > li:hover > a {
-  color: #0D81A0;
-}
-header ul.gnb > li:hover > .sub > li > a {
-  color: #444;
-}
-header ul.gnb > li > .sub > li > a:hover {
-  color: #0D81A0;
-}
-header ul.gnb > li:nth-of-type(1), header ul.gnb > li:nth-of-type(4) {
-  margin-right: 25px;
-}
-header ul.gnb > li > a {
+.gnb__item--link {
+  position: relative;
   display: inline-block;
   line-height: 80px;
-  font-weight: 500;
+  font-weight: 18px;
   font-size: 19px;
-  position: relative;
 }
-header ul.gnb > li > a::before {
+.gnb__item--link::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -237,38 +203,69 @@ header ul.gnb > li > a::before {
   background: #0D81A0;
   transition: 0.2s;
 }
-header ul.gnb > li > a:hover::before {
+.gnb__item:hover .gnb__item--link {
+  color: #0D81A0;
+}
+.gnb__item:hover .gnb__item--link::before {
   width: 100%;
 }
-header ul.gnb .sub {
+.gnb__item:hover .gnb__sub--item--link {
+  color: #444;
+}
+.gnb:nth-of-type(1), .gnb:nth-of-type(4) {
+  margin-right: 25px;
+}
+.gnb__sub {
   display: none;
   position: absolute;
-  left: 0;
   top: 100%;
+  left: 0;
   width: 100%;
   margin-top: 20px;
   z-index: 1000;
 }
-header ul.gnb .sub > li {
+.gnb__sub--item {
   margin: 20px 0;
   text-align: center;
 }
-header ul.gnb .sub > li > a {
-  color: #aaa;
+.gnb__sub--item--link {
   display: inline-block;
   width: 100%;
+  color: #aaa;
 }
-header .trigger {
+.gnb__sub--item--link:hover {
+  color: #0D81A0;
+}
+.gnb__bg {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 280px;
+  z-index: 900;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+.gnb__overlay {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 500;
+  background: rgba(0, 0, 0, 0.2588235294);
+}
+
+.trigger {
   position: relative;
   width: 40px;
   height: 30px;
   margin-left: 20px;
   cursor: pointer;
 }
-header .trigger:hover span {
-  background: #0D81A0;
-}
-header .trigger span {
+.trigger__item {
   position: absolute;
   top: 0;
   left: 0;
@@ -277,14 +274,17 @@ header .trigger span {
   height: 2px;
   background: #000;
 }
-header .trigger span:nth-of-type(1) {
+.trigger__item-1 {
   top: 0;
 }
-header .trigger span:nth-of-type(2) {
+.trigger__item-2 {
   top: 50%;
 }
-header .trigger span:nth-of-type(3) {
+.trigger__item-3 {
   top: 100%;
+}
+.trigger:hover .trigger__item {
+  background: #0D81A0;
 }
 
 /* main section */
@@ -349,7 +349,7 @@ main .main-info .main-guide .main-search {
 main .main-info .main-guide .main-search label {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 500;
   color: #0D81A0;
   width: 100%;

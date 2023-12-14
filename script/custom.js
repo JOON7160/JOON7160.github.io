@@ -1,7 +1,7 @@
 $(function(){
     //menu-btn
     $('.trigger').click(function(){
-        $('.sub, .gnb-bg, .bg-overlay').slideUp('fast')
+        $('.gnb__sub, .gnb__bg, .gnb__overlay').slideUp('fast')
         $('.m-menu').addClass('active')
     })
     $('.close-btn').click(function(){
@@ -30,15 +30,15 @@ $(function(){
         
     })
     // gnb 
-    $('.gnb li').mouseover(function(){
-        $('.gnb-bg').stop().slideDown('fast')
-        $('.sub').stop().fadeIn()
-        $('.bg-overlay').show()
+    $('.gnb__item').mouseover(function(){
+        $('.gnb__bg').stop().slideDown('fast')
+        $('.gnb__sub').stop().fadeIn()
+        $('.gnb__overlay').show()
     })
-    $('.bg-overlay').mouseover(function(){
-        $('.gnb-bg').stop().slideUp('fast')
-        $('.sub').stop().fadeOut('fast')
-        $('.bg-overlay').hide()
+    $('.gnb__overlay').mouseover(function(){
+        $('.gnb__bg').stop().slideUp('fast')
+        $('.gnb__sub').stop().fadeOut('fast')
+        $('.gnb__overlay').hide()
         })
         //main swiper 
         const mainswiper = new Swiper('.main-swiper', {
