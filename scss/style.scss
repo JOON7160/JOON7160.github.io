@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600&display=swap');
 
-/* default settings */
+/* default variables */
 $font-base: 'Noto Sans KR', sans-serif;
 $font-base-size: 16px;
 $base-color: #333;
 $primary-color: #0D81A0;
 $gnb-color: #aaa;
-$font-bold : 19px;
-$gnb-font-bold : 500;
-$gnb-font-normal : 18px;
 
 /*Reset CSS*/
 * {
@@ -259,7 +256,7 @@ header {
             & > a {
                 display: inline-block;
                 line-height: 80px;
-                font-weight: $gnb-font-bold;
+                font-weight: 18px;
                 font-size: 19px;
                 position: relative;
                 &::before {
@@ -416,7 +413,7 @@ main {
                     text-align: center;
                     >a {
                         margin: 10px;
-                        font-size: $font-base-size;
+                        font-size: 16px;
                         color: #79939A;
                         font-weight: normal;
                         &:hover {
@@ -1020,7 +1017,7 @@ section.recommendation {
                 word-break: keep-all;
                 word-wrap: break-word;
                 color: #2c503e;
-                font-size: $font-base-size;
+                font-size: 16px;
                 font-weight: 200;
                 height: 70px;
                 overflow: hidden;
