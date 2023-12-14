@@ -108,10 +108,6 @@ section {
     width: 20px;
     color: #00000077;
     cursor: pointer;
-    .fa-play {}
-    .fa-pause {
-        display: none;
-    }
 }
 
 /* header section */
@@ -328,35 +324,66 @@ section {
 }
 
 /* main section */
-main {
+.main {
     margin: 20px 0;
-    .main-info {
+    &__info {
         display: flex;
         gap: 30px;
-        .main-slider {
-            position: relative;
-            .main-swiper {
-                width: 500px;
-                .main-slide {
-                    a {
-                        display:block;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 20px;
-                        overflow: hidden;
-                        img {
-                            display: block;
-                            width: 100%;
-                        }
-                    }
-                    // border: 1px solid #000;
-                }
+    }
+    &__slider {
+        position: relative;
+    }
+    &__swiper {
+        width: 100%;
+        height: 100%;
+        &--wrapper {
+            display: flex;
+            width: 500px;
+        }
+        &--slide {
+            &--link {
+                display:block;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                overflow: hidden;
             }
+            &--img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &--control {
+            margin-top: 5px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .btn--play {
+            display: inline-block;
+            font-size: 15px;
+            margin-right: 5px;
+            width: 20px;
+            color: #00000077;
+            cursor: pointer;
+            &--active {
+
+            }
+            &--disabled {
+                display: none;
+            }
+        }
+        
+    
+}
+}
+main {
+    .main-info {
+        
+        .main-slider {
+            
             .swiper-control {
-                margin-top: 5px;
-                padding-left: 10px;
-                display: flex;
-                align-items: center;
+                
                 .main-pagination {
                     position: static;
                     text-align: left;

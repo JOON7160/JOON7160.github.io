@@ -144,33 +144,33 @@
             <div class="gnb__bg"></div>
             <div class="gnb__overlay"></div>
         </header>
-        <main>
+        <main class='main'>
             <div class="inner">
-                <div class="main-info">
-                    <div class="main-slider">
-                        <div class="main-swiper swiper">
-                            <div class="swiper-wrapper">
-                                <div class="main-slide swiper-slide">
-                                    <a href="#none">
-                                        <img src="/img/main-slide1.jpg" alt="마이데이터가 무엇일까요?">
+                <div class="main__info">
+                    <div class="main__slider">
+                        <div class="main__swiper swiper">
+                            <ul class="main__swiper--wrapper">
+                                <li class="main__swiper--slide">
+                                    <a href="#none" class='main__swiper--slide--link'>
+                                        <img src="/img/main-slide1.jpg" class=" main__swiper--slide--img" alt="마이데이터가 무엇일까요?">
                                     </a>
-                                </div>
-                                <div class="main-slide swiper-slide">
-                                    <a href="#none">
-                                        <img src="/img/main-slide2.jpg" alt="마이데이터 서비스 소개">
+                                </li>
+                                <li class="main__swiper--slide">
+                                    <a href="#none" class='main__swiper--slide--link'>
+                                        <img src="/img/main-slide2.jpg" class=" main__swiper--slide--img" alt="마이데이터 서비스 소개">
                                     </a>
-                                </div>
-                                <div class="main-slide swiper-slide">
-                                    <a href="#none">
-                                        <img src="/img/main-slide3.jpeg" alt="마이데이터 전문가 상시자문">
+                                </li>
+                                <li class="main__swiper--slide">
+                                    <a href="#none" class='main__swiper--slide--link'>
+                                        <img src="/img/main-slide3.jpeg" class=" main__swiper--slide--img" alt="마이데이터 전문가 상시자문">
                                     </a>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="swiper-control">
-                            <div class="swiper-play-btn main-swiper-play-btn">
-                                <i class="fa-solid fa-play"></i>
-                                <i class="fa-solid fa-pause"></i>
+                        <div class="main__swiper--control">
+                            <div class="btn--play">
+                                <i class="fa-solid fa-play btn--play--active"></i>
+                                <i class="fa-solid fa-pause btn--play--disabled"></i>
                             </div>
                             <div class="main-pagination swiper-pagination"></div>
                         </div>

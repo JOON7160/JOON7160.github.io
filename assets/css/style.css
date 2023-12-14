@@ -288,36 +288,53 @@ section {
 }
 
 /* main section */
-main {
+.main {
   margin: 20px 0;
 }
-main .main-info {
+.main__info {
   display: flex;
   gap: 30px;
 }
-main .main-info .main-slider {
+.main__slider {
   position: relative;
 }
-main .main-info .main-slider .main-swiper {
+.main__swiper {
+  width: 100%;
+  height: 100%;
+}
+.main__swiper--wrapper {
+  display: flex;
   width: 500px;
 }
-main .main-info .main-slider .main-swiper .main-slide a {
+.main__swiper--slide--link {
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px;
   overflow: hidden;
 }
-main .main-info .main-slider .main-swiper .main-slide a img {
+.main__swiper--slide--img {
   display: block;
   width: 100%;
 }
-main .main-info .main-slider .swiper-control {
+.main__swiper--control {
   margin-top: 5px;
   padding-left: 10px;
   display: flex;
   align-items: center;
 }
+.main__swiper .btn--play {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 5px;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.4666666667);
+  cursor: pointer;
+}
+.main__swiper .btn--play--disabled {
+  display: none;
+}
+
 main .main-info .main-slider .swiper-control .main-pagination {
   position: static;
   text-align: left;
@@ -336,9 +353,6 @@ main .main-info .main-slider .swiper-control .main-swiper-play-btn {
   width: 20px;
   color: rgba(0, 0, 0, 0.4666666667);
   cursor: pointer;
-}
-main .main-info .main-slider .swiper-control .main-swiper-play-btn .fa-pause {
-  display: none;
 }
 main .main-info .main-guide {
   flex: 2;
@@ -789,9 +803,6 @@ section.simulation .simulation-swiper .simulation-swiper-control .simulation-swi
   width: 20px;
   height: 20px;
 }
-section.simulation .simulation-swiper .simulation-swiper-control .simulation-swiper-play-btn .fa-pause {
-  display: none;
-}
 section.simulation .simulation-swiper .swiper-wrapper {
   width: 100%;
   align-items: center;
@@ -1108,9 +1119,6 @@ section.recommendation .swiper-control .reco-swiper-play-btn {
   width: 20px;
   color: rgba(0, 0, 0, 0.4666666667);
   cursor: pointer;
-}
-section.recommendation .swiper-control .reco-swiper-play-btn .fa-pause {
-  display: none;
 }
 
 /*notice section */

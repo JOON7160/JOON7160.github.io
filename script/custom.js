@@ -41,7 +41,9 @@ $(function(){
         $('.gnb__overlay').hide()
         })
         //main swiper 
-        const mainswiper = new Swiper('.main-swiper', {
+        const mainSwiper = new Swiper('.main__swiper.swiper', {
+            wrapperClass: 'main__swiper--wrapper',
+            slideClass: 'main__swiper--slide',
             spaceBetween: 30,
             effect: "fade",
             direction: 'horizontal',
@@ -54,7 +56,7 @@ $(function(){
             el: '.main-pagination',
             },
         });
-        // mainswiper control
+        // mainSwiper control
         $('.main-swiper-play-btn').on('click',function(){
             if (mainswiper.autoplay.running) {
                 mainswiper.autoplay.stop();
