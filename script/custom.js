@@ -44,7 +44,6 @@ $(function(){
         const mainSwiper = new Swiper('.main__swiper.swiper', {
             wrapperClass: 'main__swiper--wrapper',
             slideClass: 'main__swiper--slide',
-            spaceBetween: 30,
             effect: "fade",
             direction: 'horizontal',
             loop: true,
@@ -57,16 +56,17 @@ $(function(){
             },
         });
         // mainSwiper control
-        $('.main-swiper-play-btn').on('click',function(){
-            if (mainswiper.autoplay.running) {
-                mainswiper.autoplay.stop();
-                $('.main-swiper-play-btn .fa-play').show();
-                $('.main-swiper-play-btn .fa-pause').hide();
+        $('.main__swiper--control .btn--play').on('click',function(){
+            if (mainSwiper.autoplay.running) {
+                mainSwiper.autoplay.stop();
+                $('.main__swiper--control .btn--play--active').show();
+                $('.main__swiper--control .btn--play--disabled').hide();
             } else {
-                mainswiper.autoplay.start()
-                $('.main-swiper-play-btn .fa-play').hide()
-                $('.main-swiper-play-btn .fa-pause').show()
+                mainSwiper.autoplay.start()
+                $('.main__swiper--control .btn--play--active').hide()
+                $('.main__swiper--control .btn--play--disabled').show()
             }
+            console.log('.main__swiper--control .btn--play')
         });
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {

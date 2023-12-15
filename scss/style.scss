@@ -344,7 +344,6 @@ section {
             &--link {
                 display:block;
                 width: 100%;
-                height: 100%;
                 border-radius: 20px;
                 overflow: hidden;
             }
@@ -354,28 +353,27 @@ section {
             }
         }
         &--control {
-            margin-top: 5px;
-            padding-left: 10px;
             display: flex;
             align-items: center;
+            margin-top: 5px;
+            padding-left: 10px;
+            .btn--play {
+                display: inline-block;
+                font-size: 15px;
+                margin-right: 5px;
+                width: 20px;
+                color: #00000077;
+                cursor: pointer;
+                border: 1px solid #000;
+                &--active {}
+                &--disabled {
+                    display: none;
+                }
         }
-        .btn--play {
-            display: inline-block;
-            font-size: 15px;
-            margin-right: 5px;
-            width: 20px;
-            color: #00000077;
-            cursor: pointer;
-            &--active {
-
-            }
-            &--disabled {
-                display: none;
-            }
         }
+    }
         
     
-}
 }
 main {
     .main-info {
@@ -395,9 +393,9 @@ main {
                         }
                     }
                 }
-                .main-swiper-play-btn {
-                    @include control-btn()
-                }
+                // .main-swiper-play-btn {
+                //     @include control-btn()
+                // }
             }
         }
         .main-guide {
