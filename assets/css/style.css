@@ -763,12 +763,13 @@ section {
 }
 
 /*simulation section */
-section.simulation {
+.simulation {
   overflow: hidden;
 }
-section.simulation .title h2 span {
+.simulation__title .color {
   color: #0D81A0;
 }
+
 section.simulation .simulation-swiper {
   overflow: visible;
 }
