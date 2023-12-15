@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+button, input {
+  border: none;
+  outline: none;
+}
+
 a {
   text-decoration: none;
   color: #333;
@@ -290,6 +295,7 @@ section {
 /* main section */
 .main {
   margin: 20px 0;
+  /* search tab */
 }
 .main__info {
   display: flex;
@@ -348,59 +354,55 @@ section {
 .main__pagination .swiper-pagination-bullet-active {
   background: #0D81A0;
 }
-
-main .main-info .main-guide {
+.main__guide {
   flex: 2;
 }
-main .main-info .main-guide .main-search {
+.main__search {
   margin-bottom: 70px;
 }
-main .main-info .main-guide .main-search label {
+.main .search {
   display: flex;
   align-items: center;
-  font-size: 21px;
-  font-weight: 500;
-  color: #0D81A0;
   width: 100%;
   padding: 10px 0;
-  box-sizing: border-box;
+  font-size: 21px;
+  font-weight: 500;
 }
-main .main-info .main-guide .main-search label .search-wrap {
+.main .search__txt {
+  color: #0D81A0;
+}
+.main .search__wrap {
   display: flex;
+  width: 100%;
+  margin-left: 10px;
   border: 2px solid #0D81A0;
   border-radius: 5px;
   overflow: hidden;
-  width: 100%;
-  margin-left: 10px;
 }
-main .main-info .main-guide .main-search label input[type=text] {
+.main .search__wrap input[type=text] {
   flex: 9;
   padding: 15px;
-  outline: none;
-  border: none;
 }
-main .main-info .main-guide .main-search label input[type=text]::placeholder {
+.main .search__wrap input[type=text]::placeholder {
   font-size: 15px;
 }
-main .main-info .main-guide .main-search label .search-btn {
+.main .search__wrap--btn {
   flex: 0.1;
-  border: none;
-  cursor: pointer;
-  background: #0D81A0 url(/img/search_btn.png) no-repeat center center;
-  outline: none;
   margin: -4px;
   padding: 30px;
+  background: #0D81A0 url(/img/search_btn.png) no-repeat center center;
+  cursor: pointer;
 }
-main .main-info .main-guide .main-search .hashtag {
+.main .hashtag {
   text-align: center;
 }
-main .main-info .main-guide .main-search .hashtag > a {
+.main .hashtag--link {
   margin: 10px;
   font-size: 16px;
   color: #79939A;
   font-weight: normal;
 }
-main .main-info .main-guide .main-search .hashtag > a:hover {
+.main .hashtag--link:hover {
   text-decoration: underline;
 }
 main .main-info .main-guide .main-items {

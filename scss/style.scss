@@ -12,6 +12,10 @@ $gnb-color: #aaa;
     font-family:  $font-base;
     box-sizing: border-box;
 }
+button,input {
+    border: none;
+    outline: none;
+}
 a {
     text-decoration: none;
     color: $base-color;
@@ -386,64 +390,65 @@ section {
             }
         }
     }
-
+    &__guide {
+        flex: 2;
+    }
+    &__search {
+        margin-bottom: 70px;
+    }
+    /* search tab */ 
+    .search {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding:10px 0;
+        font-size: 21px;
+        font-weight: 500;
+        &__txt {
+            color: $primary-color;
+        }
+        &__wrap {
+            display: flex;
+            width: 100%;
+            margin-left: 10px;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            overflow: hidden;
+            input[type=text] {
+                flex: 9;
+                padding: 15px;
+                &::placeholder {
+                    font-size: 15px;
+                }
+            }
+            &--btn {
+                flex: 0.1;
+                margin: -4px;
+                padding: 30px;
+                background: $primary-color  url(/img/search_btn.png)no-repeat center center;
+                cursor: pointer;
+            }
+        }
+    }
+    .hashtag {
+        text-align: center;
+        &--link {
+            margin: 10px;
+            font-size: 16px;
+            color: #79939A;
+            font-weight: normal;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__quickmenu {
         
+    }
 }
 main {
     .main-info {
         .main-guide {
-            flex: 2;
-            .main-search {
-                margin-bottom: 70px;
-                label {
-                    display: flex;
-                    align-items: center;
-                    font-size: 21px;
-                    font-weight: 500;
-                    color: $primary-color;
-                    width: 100%;
-                    padding:10px 0;
-                    box-sizing: border-box;
-                    .search-wrap {
-                        display: flex;
-                        border: 2px solid $primary-color;
-                        border-radius: 5px;
-                        overflow: hidden;
-                        width: 100%;
-                        margin-left: 10px;
-                    }
-                    input[type=text] {
-                        flex: 9;
-                        padding: 15px;
-                        outline: none;
-                        border: none;
-                        &::placeholder {
-                            font-size: 15px;
-                        }
-                    }
-                    .search-btn {
-                        flex: 0.1;
-                        border: none;
-                        cursor: pointer;
-                        background: $primary-color  url(/img/search_btn.png)no-repeat center center;
-                        outline: none;
-                        margin: -4px;
-                        padding: 30px;
-                    }
-                }
-                .hashtag {
-                    text-align: center;
-                    >a {
-                        margin: 10px;
-                        font-size: 16px;
-                        color: #79939A;
-                        font-weight: normal;
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
             .main-items {
                 display: flex;
                 background: #fff;
