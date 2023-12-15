@@ -329,23 +329,26 @@ section {
   width: 20px;
   color: rgba(0, 0, 0, 0.4666666667);
   cursor: pointer;
-  border: 1px solid #000;
 }
 .main__swiper--control .btn--play--disabled {
   display: none;
 }
+.main__pagination {
+  width: 200px;
+  height: 20px;
+}
+.main__pagination .swiper-pagination-bullet {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: rgba(0, 0, 0, 0.3176470588);
+}
+.main__pagination .swiper-pagination-bullet-active {
+  background: #0D81A0;
+}
 
-main .main-info .main-slider .swiper-control .main-pagination {
-  position: static;
-  text-align: left;
-}
-main .main-info .main-slider .swiper-control .main-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-}
-main .main-info .main-slider .swiper-control .main-pagination .swiper-pagination-bullet-active {
-  background-color: #0E81A0;
-}
 main .main-info .main-guide {
   flex: 2;
 }

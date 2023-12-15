@@ -364,40 +364,33 @@ section {
                 width: 20px;
                 color: #00000077;
                 cursor: pointer;
-                border: 1px solid #000;
                 &--active {}
                 &--disabled {
                     display: none;
                 }
-        }
+            }
         }
     }
+    &__pagination {
+        width: 200px;
+        height: 20px;
+        .swiper-pagination-bullet {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 5px;
+            background: #00000051;
+            &-active {
+                background: $primary-color;
+            }
+        }
+    }
+
         
-    
 }
 main {
     .main-info {
-        
-        .main-slider {
-            
-            .swiper-control {
-                
-                .main-pagination {
-                    position: static;
-                    text-align: left;
-                    .swiper-pagination-bullet {
-                        width: 10px;
-                        height: 10px;
-                        &-active {
-                            background-color: #0E81A0;
-                        }
-                    }
-                }
-                // .main-swiper-play-btn {
-                //     @include control-btn()
-                // }
-            }
-        }
         .main-guide {
             flex: 2;
             .main-search {

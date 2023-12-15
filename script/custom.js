@@ -52,7 +52,7 @@ $(function(){
                 disableOnInteraction: false,
             },
             pagination: {
-            el: '.main-pagination',
+            el: '.main__pagination',
             },
         });
         // mainSwiper control
