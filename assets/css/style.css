@@ -302,15 +302,18 @@ section {
   gap: 30px;
 }
 .main__slider {
+  flex: 1;
   position: relative;
 }
 .main__swiper {
-  width: 100%;
-  height: 100%;
+  width: 500px;
 }
 .main__swiper--wrapper {
   display: flex;
-  width: 500px;
+  width: 300%;
+}
+.main__swiper--slide {
+  width: 100%;
 }
 .main__swiper--slide--link {
   display: block;
@@ -405,15 +408,15 @@ section {
 .main .hashtag--link:hover {
   text-decoration: underline;
 }
-main .main-info .main-guide .main-items {
+.main__quickmenu {
   display: flex;
+  flex-wrap: wrap;
   background: #fff;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1725490196);
   border-radius: 10px;
   overflow: hidden;
-  flex-wrap: wrap;
 }
-main .main-info .main-guide .main-items .item {
+.main__quickmenu .quickmenu__items {
   position: relative;
   display: flex;
   justify-content: center;
@@ -424,7 +427,7 @@ main .main-info .main-guide .main-items .item {
   padding: 50px 30px;
   border-bottom: 1px solid #eee;
 }
-main .main-info .main-guide .main-items .item::after {
+.main__quickmenu .quickmenu__items::after {
   position: absolute;
   content: "";
   right: 0;
@@ -434,31 +437,32 @@ main .main-info .main-guide .main-items .item::after {
   height: 50%;
   background: #eee;
 }
-main .main-info .main-guide .main-items .item-img {
-  flex: 1;
-  transition: 0.3s;
-}
-main .main-info .main-guide .main-items .item-img img {
-  width: 100%;
-}
-main .main-info .main-guide .main-items .item-txt {
-  flex: 3;
-}
-main .main-info .main-guide .main-items .item-txt .title {
-  display: block;
-  font-weight: 500;
-}
-main .main-info .main-guide .main-items .item-txt .txt {
-  font-size: 13px;
-  color: #777;
-}
-main .main-info .main-guide .main-items .item:hover {
+.main__quickmenu .quickmenu__items:hover {
   background: #F5FCF8;
   color: #3B865D;
 }
-main .main-info .main-guide .main-items .item:hover .item-img {
+.main__quickmenu .quickmenu__items:hover .quickmenu__items--img {
   transform: translateY(-5px);
 }
+.main__quickmenu .quickmenu__items--img {
+  flex: 1;
+  transition: 0.3s;
+}
+.main__quickmenu .quickmenu__items--img img {
+  width: 100%;
+}
+.main__quickmenu .quickmenu__items--txt {
+  flex: 3;
+}
+.main__quickmenu .quickmenu__items--txt .title {
+  display: block;
+  font-weight: 500;
+}
+.main__quickmenu .quickmenu__items--txt .txt {
+  font-size: 13px;
+  color: #777;
+}
+
 main .main-category {
   position: relative;
   margin-top: 50px;

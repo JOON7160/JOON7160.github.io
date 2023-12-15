@@ -335,16 +335,17 @@ section {
         gap: 30px;
     }
     &__slider {
+        flex: 1;
         position: relative;
     }
     &__swiper {
-        width: 100%;
-        height: 100%;
+        width: 500px;
         &--wrapper {
             display: flex;
-            width: 500px;
+            width: 300%;
         }
         &--slide {
+            width: 100%;
             &--link {
                 display:block;
                 width: 100%;
@@ -443,20 +444,14 @@ section {
         }
     }
     &__quickmenu {
-        
-    }
-}
-main {
-    .main-info {
-        .main-guide {
-            .main-items {
-                display: flex;
-                background: #fff;
-                box-shadow: 0 0 20px 5px #0000002c;
-                border-radius: 10px;
-                overflow: hidden;
-                flex-wrap: wrap;
-                .item {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            box-shadow: 0 0 20px 5px #0000002c;
+            border-radius: 10px;
+            overflow: hidden;
+            .quickmenu {
+                &__items {
                     position: relative;
                     display: flex;
                     justify-content: center;
@@ -475,16 +470,22 @@ main {
                         width: 1px;
                         height: 50%;
                         background: #eee;
+                }
+                    &:hover {
+                        .quickmenu__items--img {
+                            transform: translateY(-5px);
+                        }
+                        background: #F5FCF8;
+                        color: #3B865D;
                     }
-                    &-img {
+                    &--img {
                         flex: 1;
-                        // width: 20%;
                         img {
                             width: 100%;
                         }
                         transition: 0.3s;
                     }
-                    &-txt {
+                    &--txt {
                         flex: 3;
                         .title {
                             display: block;
@@ -495,17 +496,11 @@ main {
                             color: #777;
                         }
                     }
-                    &:hover {
-                        .item-img {
-                            transform: translateY(-5px);
-                        }
-                        background: #F5FCF8;
-                        color: #3B865D;
-                    }
                 }
             }
-        }
     }
+}
+main {
     .main-category {
         position: relative;
         margin-top: 50px;
