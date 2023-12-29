@@ -58,12 +58,12 @@ $(function(){
         $('.main-swiper-play-btn').on('click',function(){
             if (mainswiper.autoplay.running) {
                 mainswiper.autoplay.stop();
-                $('.main-swiper-play-btn .fa-play').show();
-                $('.main-swiper-play-btn .fa-pause').hide();
+                $('.main-swiper-play-btn .fa-solid').removeClass('fa-play')
+                $('.main-swiper-play-btn .fa-solid').addClass('fa-pause');
             } else {
                 mainswiper.autoplay.start()
-                $('.main-swiper-play-btn .fa-play').hide()
-                $('.main-swiper-play-btn .fa-pause').show()
+                $('.main-swiper-play-btn .fa-solid').removeClass('fa-pause');
+                $('.main-swiper-play-btn .fa-solid').addClass('fa-play')
             }
         });
         //simulation swiper
@@ -104,12 +104,12 @@ $(function(){
         $('.simulation-swiper-play-btn').on('click',function(){
             if (simulationswiper.autoplay.running) {
                 simulationswiper.autoplay.stop();
-                $('.simulation-swiper-play-btn .fa-play').show();
-                $('.simulation-swiper-play-btn .fa-pause').hide();
+                $('.simulation-swiper-play-btn .fa-solid').removeClass('fa-play')
+                $('.simulation-swiper-play-btn .fa-solid').addClass('fa-pause');
             } else {
                 simulationswiper.autoplay.start()
-                $('.simulation-swiper-play-btn .fa-play').hide()
-                $('.simulation-swiper-play-btn .fa-pause').show()
+                $('.simulation-swiper-play-btn .fa-solid').addClass('fa-pause')
+                $('.simulation-swiper-play-btn .fa-solid').removeClass('fa-play');
             }
         });
         //recommendation swiper

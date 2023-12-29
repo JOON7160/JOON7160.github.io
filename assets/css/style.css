@@ -337,9 +337,6 @@ main .main-info .main-slider .swiper-control .main-swiper-play-btn {
   color: rgba(0, 0, 0, 0.4666666667);
   cursor: pointer;
 }
-main .main-info .main-slider .swiper-control .main-swiper-play-btn .fa-pause {
-  display: none;
-}
 main .main-info .main-guide {
   flex: 2;
 }
@@ -788,9 +785,6 @@ section.simulation .simulation-swiper .simulation-swiper-control .simulation-swi
   cursor: pointer;
   width: 20px;
   height: 20px;
-}
-section.simulation .simulation-swiper .simulation-swiper-control .simulation-swiper-play-btn .fa-pause {
-  display: none;
 }
 section.simulation .simulation-swiper .swiper-wrapper {
   width: 100%;

@@ -112,9 +112,7 @@ section {
     color: #00000077;
     cursor: pointer;
     .fa-play {}
-    .fa-pause {
-        display: none;
-    }
+    .fa-pause {}
 }
 
 /* header section */
@@ -1093,6 +1091,7 @@ section.recommendation {
         }
         .reco-swiper-play-btn {
             @include control-btn();
+            .fa-pause{display: none;}
         }
     }
 }
