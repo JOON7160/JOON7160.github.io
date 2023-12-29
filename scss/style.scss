@@ -374,7 +374,7 @@ main {
             flex: 2;
             .main-search {
                 margin-bottom: 70px;
-                label {
+                .search-inner {
                     display: flex;
                     align-items: center;
                     font-size: $font-bold + 5;

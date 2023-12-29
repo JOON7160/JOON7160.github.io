@@ -343,7 +343,7 @@ main .main-info .main-guide {
 main .main-info .main-guide .main-search {
   margin-bottom: 70px;
 }
-main .main-info .main-guide .main-search label {
+main .main-info .main-guide .main-search .search-inner {
   display: flex;
   align-items: center;
   font-size: 24px;
@@ -353,7 +353,7 @@ main .main-info .main-guide .main-search label {
   padding: 10px 0;
   box-sizing: border-box;
 }
-main .main-info .main-guide .main-search label .search-wrap {
+main .main-info .main-guide .main-search .search-inner .search-wrap {
   display: flex;
   border: 2px solid #0D81A0;
   border-radius: 5px;
@@ -361,16 +361,16 @@ main .main-info .main-guide .main-search label .search-wrap {
   width: 100%;
   margin-left: 10px;
 }
-main .main-info .main-guide .main-search label input[type=text] {
+main .main-info .main-guide .main-search .search-inner input[type=text] {
   flex: 9;
   padding: 15px;
   outline: none;
   border: none;
 }
-main .main-info .main-guide .main-search label input[type=text]::placeholder {
+main .main-info .main-guide .main-search .search-inner input[type=text]::placeholder {
   font-size: 15px;
 }
-main .main-info .main-guide .main-search label .search-btn {
+main .main-info .main-guide .main-search .search-inner .search-btn {
   flex: 0.1;
   border: none;
   cursor: pointer;
