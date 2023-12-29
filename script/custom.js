@@ -1,7 +1,7 @@
 $(function(){
     //menu-btn
     $('.trigger').click(function(){
-        $('.gnb__sub, .gnb__bg, .gnb__overlay').slideUp('fast')
+        $('.sub, .gnb-bg, .bg-overlay').slideUp('fast')
         $('.m-menu').addClass('active')
     })
     $('.close-btn').click(function(){
@@ -30,20 +30,19 @@ $(function(){
         
     })
     // gnb 
-    $('.gnb__item').mouseover(function(){
-        $('.gnb__bg').stop().slideDown('fast')
-        $('.gnb__sub').stop().fadeIn()
-        $('.gnb__overlay').show()
+    $('.gnb li').mouseover(function(){
+        $('.gnb-bg').stop().slideDown('fast')
+        $('.sub').stop().fadeIn()
+        $('.bg-overlay').show()
     })
-    $('.gnb__overlay').mouseover(function(){
-        $('.gnb__bg').stop().slideUp('fast')
-        $('.gnb__sub').stop().fadeOut('fast')
-        $('.gnb__overlay').hide()
+    $('.bg-overlay').mouseover(function(){
+        $('.gnb-bg').stop().slideUp('fast')
+        $('.sub').stop().fadeOut('fast')
+        $('.bg-overlay').hide()
         })
         //main swiper 
-        const mainSwiper = new Swiper('.main__swiper.swiper', {
-            wrapperClass: 'main__swiper--wrapper',
-            slideClass: 'main__swiper--slide',
+        const mainswiper = new Swiper('.main-swiper', {
+            spaceBetween: 30,
             effect: "fade",
             direction: 'horizontal',
             loop: true,
@@ -52,21 +51,20 @@ $(function(){
                 disableOnInteraction: false,
             },
             pagination: {
-            el: '.main__pagination',
+            el: '.main-pagination',
             },
         });
-        // mainSwiper control
-        $('.main__swiper--control .btn--play').on('click',function(){
-            if (mainSwiper.autoplay.running) {
-                mainSwiper.autoplay.stop();
-                $('.main__swiper--control .btn--play--active').show();
-                $('.main__swiper--control .btn--play--disabled').hide();
+        // mainswiper control
+        $('.main-swiper-play-btn').on('click',function(){
+            if (mainswiper.autoplay.running) {
+                mainswiper.autoplay.stop();
+                $('.main-swiper-play-btn .fa-play').show();
+                $('.main-swiper-play-btn .fa-pause').hide();
             } else {
-                mainSwiper.autoplay.start()
-                $('.main__swiper--control .btn--play--active').hide()
-                $('.main__swiper--control .btn--play--disabled').show()
+                mainswiper.autoplay.start()
+                $('.main-swiper-play-btn .fa-play').hide()
+                $('.main-swiper-play-btn .fa-pause').show()
             }
-            console.log('.main__swiper--control .btn--play')
         });
         //simulation swiper
         var simulationswiper = new Swiper(".simulation-swiper", {
