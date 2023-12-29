@@ -374,7 +374,7 @@ main .main-info .main-guide .main-search label .search-btn {
   flex: 0.1;
   border: none;
   cursor: pointer;
-  background: #0D81A0 url(./img/search_btn.png) no-repeat center center;
+  background: #0D81A0 url(../img/search_btn.png) no-repeat center center;
   outline: none;
   margin: -4px;
   padding: 30px;
@@ -497,34 +497,34 @@ main .main-category .category-wrap .icon-list li {
   overflow: hidden;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(1) > a::before {
-  background: url(./img/cate001.png) no-repeat center center;
+  background: url(../img/cate001.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(2) > a::before {
-  background: url(./img/cate002.png) no-repeat center center;
+  background: url(../img/cate002.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(3) > a::before {
-  background: url(./img/cate003.png) no-repeat center center;
+  background: url(../img/cate003.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(4) > a::before {
-  background: url(./img/cate004.png) no-repeat center center;
+  background: url(../img/cate004.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(5) > a::before {
-  background: url(./img/cate005.png) no-repeat center center;
+  background: url(../img/cate005.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(6) > a::before {
-  background: url(./img/cate006.png) no-repeat center center;
+  background: url(../img/cate006.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(7) > a::before {
-  background: url(./img/cate007.png) no-repeat center center;
+  background: url(../img/cate007.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(8) > a::before {
-  background: url(./img/cate008.png) no-repeat center center;
+  background: url(../img/cate008.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(9) > a::before {
-  background: url(./img/cate009.png) no-repeat center center;
+  background: url(../img/cate009.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li:nth-of-type(10) > a::before {
-  background: url(./img/cate010.png) no-repeat center center;
+  background: url(../img/cate010.png) no-repeat center center;
 }
 main .main-category .category-wrap .icon-list li > a {
   position: relative;
@@ -565,7 +565,7 @@ main .main-category .all-menu:hover {
 main .main-category .all-menu::before {
   content: "";
   display: block;
-  background: url(./img/all_icon.png) no-repeat center center;
+  background: url(../img/all_icon.png) no-repeat center center;
   width: 23px;
   height: 23px;
   margin: 5px auto;
@@ -715,22 +715,22 @@ section.totalcare .totalcare-guide .guide-list li:last-child::after {
   display: none;
 }
 section.totalcare .totalcare-guide .guide-list li:nth-of-type(1) a::before {
-  background: url(./img/gd01.png) no-repeat center center;
+  background: url(../img/gd01.png) no-repeat center center;
 }
 section.totalcare .totalcare-guide .guide-list li:nth-of-type(2) a::before {
-  background: url(./img/gd02.png) no-repeat center center;
+  background: url(../img/gd02.png) no-repeat center center;
 }
 section.totalcare .totalcare-guide .guide-list li:nth-of-type(3) a::before {
-  background: url(./img/gd03.png) no-repeat center center;
+  background: url(../img/gd03.png) no-repeat center center;
 }
 section.totalcare .totalcare-guide .guide-list li:nth-of-type(4) a::before {
-  background: url(./img/gd04.png) no-repeat center center;
+  background: url(../img/gd04.png) no-repeat center center;
 }
 section.totalcare .totalcare-guide .guide-list li:nth-of-type(5) a::before {
-  background: url(./img/gd05.png) no-repeat center center;
+  background: url(../img/gd05.png) no-repeat center center;
 }
 section.totalcare .totalcare-guide .guide-list li:nth-of-type(6) a::before {
-  background: url(./img/gd06.png) no-repeat center center;
+  background: url(../img/gd06.png) no-repeat center center;
 }
 section.totalcare .totalcare-guide .guide-list li a {
   display: block;
@@ -1042,35 +1042,35 @@ section.recommendation .swiper-slide .app-tag .tag-info {
   border-radius: 5px;
 }
 section.recommendation .swiper-slide.app-slide1 .app-top-box {
-  background: url(./img/app-icon1.png) no-repeat center center;
+  background: url(../img/app-icon1.png) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-slide.app-slide2 .app-top-box {
-  background: url(./img/app-icon2.jpg) no-repeat center center;
+  background: url(../img/app-icon2.jpg) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-slide.app-slide3 .app-top-box {
-  background: url(./img/app-icon3.png) no-repeat center center;
+  background: url(../img/app-icon3.png) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-slide.app-slide4 .app-top-box {
-  background: url(./img/app-icon4.png) no-repeat center center;
+  background: url(../img/app-icon4.png) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-slide.app-slide5 .app-top-box {
-  background: url(./img/app-icon5.png) no-repeat center center;
+  background: url(../img/app-icon5.png) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-slide.app-slide6 .app-top-box {
-  background: url(./img/app-icon6.png) no-repeat center center;
+  background: url(../img/app-icon6.png) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-slide.app-slide7 .app-top-box {
-  background: url(./img/app-icon7.png) no-repeat center center;
+  background: url(../img/app-icon7.png) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-slide.app-slide8 .app-top-box {
-  background: url(./img/app-icon8.jpg) no-repeat center center;
+  background: url(../img/app-icon8.jpg) no-repeat center center;
   background-size: cover;
 }
 section.recommendation .swiper-control {

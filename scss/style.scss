@@ -404,7 +404,7 @@ main {
                         flex: 0.1;
                         border: none;
                         cursor: pointer;
-                        background: $primary-color  url(./img/search_btn.png)no-repeat center center;
+                        background: $primary-color  url(../img/search_btn.png)no-repeat center center;
                         outline: none;
                         margin: -4px;
                         padding: 30px;
@@ -529,34 +529,34 @@ main {
                     border-radius: 10px;
                     overflow: hidden;
                     &:nth-of-type(1) > a::before {
-                        background: url(./img/cate001.png)no-repeat center center;
+                        background: url(../img/cate001.png)no-repeat center center;
                     }
                     &:nth-of-type(2) > a::before {
-                        background: url(./img/cate002.png)no-repeat center center;
+                        background: url(../img/cate002.png)no-repeat center center;
                     }
                     &:nth-of-type(3) > a::before {
-                        background: url(./img/cate003.png)no-repeat center center;
+                        background: url(../img/cate003.png)no-repeat center center;
                     }
                     &:nth-of-type(4) > a::before {
-                        background: url(./img/cate004.png)no-repeat center center;
+                        background: url(../img/cate004.png)no-repeat center center;
                     }
                     &:nth-of-type(5) > a::before {
-                        background: url(./img/cate005.png)no-repeat center center;
+                        background: url(../img/cate005.png)no-repeat center center;
                     }
                     &:nth-of-type(6) > a::before {
-                        background: url(./img/cate006.png)no-repeat center center;
+                        background: url(../img/cate006.png)no-repeat center center;
                     }
                     &:nth-of-type(7) > a::before {
-                        background: url(./img/cate007.png)no-repeat center center;
+                        background: url(../img/cate007.png)no-repeat center center;
                     }
                     &:nth-of-type(8) > a::before {
-                        background: url(./img/cate008.png)no-repeat center center;
+                        background: url(../img/cate008.png)no-repeat center center;
                     }
                     &:nth-of-type(9) > a::before {
-                        background: url(./img/cate009.png)no-repeat center center;
+                        background: url(../img/cate009.png)no-repeat center center;
                     }
                     &:nth-of-type(10) > a::before {
-                        background: url(./img/cate010.png)no-repeat center center;
+                        background: url(../img/cate010.png)no-repeat center center;
                     }
                     >a {
                         position: relative;
@@ -599,7 +599,7 @@ main {
                 &::before {
                     content: "";
                     display: block;
-                    background: url(./img/all_icon.png)no-repeat center center;
+                    background: url(../img/all_icon.png)no-repeat center center;
                     width: 23px;
                     height: 23px;
                     margin: 5px auto;
@@ -740,22 +740,22 @@ section.totalcare {
                     display: none;
                 }
                 &:nth-of-type(1) a::before {
-                    background: url(./img/gd01.png)no-repeat center center;
+                    background: url(../img/gd01.png)no-repeat center center;
                 }
                 &:nth-of-type(2) a::before {
-                    background: url(./img/gd02.png)no-repeat center center;
+                    background: url(../img/gd02.png)no-repeat center center;
                 }
                 &:nth-of-type(3) a::before {
-                    background: url(./img/gd03.png)no-repeat center center;
+                    background: url(../img/gd03.png)no-repeat center center;
                 }
                 &:nth-of-type(4) a::before {
-                    background: url(./img/gd04.png)no-repeat center center;
+                    background: url(../img/gd04.png)no-repeat center center;
                 }
                 &:nth-of-type(5) a::before {
-                    background: url(./img/gd05.png)no-repeat center center;
+                    background: url(../img/gd05.png)no-repeat center center;
                 }
                 &:nth-of-type(6) a::before {
-                    background: url(./img/gd06.png)no-repeat center center;
+                    background: url(../img/gd06.png)no-repeat center center;
                 }
                 a {
                     display: block;
@@ -1036,35 +1036,35 @@ section.recommendation {
             }
         }
         &.app-slide1 .app-top-box {
-            background: url(./img/app-icon1.png)no-repeat center center;
+            background: url(../img/app-icon1.png)no-repeat center center;
             background-size: cover;
         }
         &.app-slide2 .app-top-box {
-            background: url(./img/app-icon2.jpg)no-repeat center center;
+            background: url(../img/app-icon2.jpg)no-repeat center center;
             background-size: cover;
         }
         &.app-slide3 .app-top-box {
-            background: url(./img/app-icon3.png)no-repeat center center;
+            background: url(../img/app-icon3.png)no-repeat center center;
             background-size: cover;
         }
         &.app-slide4 .app-top-box {
-            background: url(./img/app-icon4.png)no-repeat center center;
+            background: url(../img/app-icon4.png)no-repeat center center;
             background-size: cover;
         }
         &.app-slide5 .app-top-box {
-            background: url(./img/app-icon5.png)no-repeat center center;
+            background: url(../img/app-icon5.png)no-repeat center center;
             background-size: cover;
         }
         &.app-slide6 .app-top-box {
-            background: url(./img/app-icon6.png)no-repeat center center;
+            background: url(../img/app-icon6.png)no-repeat center center;
             background-size: cover;
         }
         &.app-slide7 .app-top-box {
-            background: url(./img/app-icon7.png)no-repeat center center;
+            background: url(../img/app-icon7.png)no-repeat center center;
             background-size: cover;
         }
         &.app-slide8 .app-top-box {
-            background: url(./img/app-icon8.jpg)no-repeat center center;
+            background: url(../img/app-icon8.jpg)no-repeat center center;
             background-size: cover;
         }
     }
