@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600&display=swap');
 
-/* default variables */
+/* default settings */
 $font-base: 'Noto Sans KR', sans-serif;
 $font-base-size: 16px;
 $base-color: #333;
 $primary-color: #0D81A0;
 $gnb-color: #aaa;
+$font-bold : 19px;
+$gnb-font-bold : 500;
+$gnb-font-normal : 18px;
 
 /*Reset CSS*/
 * {
@@ -296,23 +299,80 @@ section {
         z-index: 500;
         background: #00000042;
     }
-}
-
-.trigger {
-    position: relative;
-    width: 40px;
-    height: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    &__item {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        &-1 {
+    h1.logo {
+        margin-right: auto;
+    }
+    ul.gnb {
+        display: flex;
+        height: 80px;
+        > li {
+            position: relative;
+            padding: 0 40px;
+            &:hover > a {
+                color: $primary-color;
+            }
+            &:hover > .sub > li > a {
+                color: #444;
+            }
+            & > .sub > li > a:hover {
+                color: $primary-color;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(4){
+                margin-right: 25px;
+            }
+            & > a {
+                display: inline-block;
+                line-height: 80px;
+                font-weight: $gnb-font-bold;
+                font-size: 19px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%);
+                    height: 2px;
+                    width: 0;
+                    background: $primary-color;
+                    transition: 0.2s;
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+        .sub {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            margin-top: 20px;
+            z-index: 1000;
+            >li {
+                margin: 20px 0;
+                text-align: center;
+                >a {
+                    color: $gnb-color;
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .trigger {
+        position: relative;
+        width: 40px;
+        height: 30px;
+        margin-left: 20px;
+        cursor: pointer;
+        &:hover span {
+            background: $primary-color;
+        }
+        span {
+            position: absolute;
             top: 0;
         }
         &-2 {
@@ -375,51 +435,57 @@ section {
                 }
             }
         }
-    }
-    &__pagination {
-        width: 200px;
-        height: 20px;
-        .swiper-pagination-bullet {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            margin-right: 5px;
-            background: #00000051;
-            &-active {
-                background: $primary-color;
-            }
-        }
-    }
-    &__guide {
-        flex: 2;
-    }
-    &__search {
-        margin-bottom: 70px;
-    }
-    /* search tab */ 
-    .search {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding:10px 0;
-        font-size: 21px;
-        font-weight: 500;
-        &__txt {
-            color: $primary-color;
-        }
-        &__wrap {
-            display: flex;
-            width: 100%;
-            margin-left: 10px;
-            border: 2px solid $primary-color;
-            border-radius: 5px;
-            overflow: hidden;
-            input[type=text] {
-                flex: 9;
-                padding: 15px;
-                &::placeholder {
-                    font-size: 15px;
+        .main-guide {
+            flex: 2;
+            .main-search {
+                margin-bottom: 70px;
+                label {
+                    display: flex;
+                    align-items: center;
+                    font-size: $font-bold + 5;
+                    font-weight: 500;
+                    color: $primary-color;
+                    width: 100%;
+                    padding:10px 0;
+                    box-sizing: border-box;
+                    .search-wrap {
+                        display: flex;
+                        border: 2px solid $primary-color;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-left: 10px;
+                    }
+                    input[type=text] {
+                        flex: 9;
+                        padding: 15px;
+                        outline: none;
+                        border: none;
+                        &::placeholder {
+                            font-size: 15px;
+                        }
+                    }
+                    .search-btn {
+                        flex: 0.1;
+                        border: none;
+                        cursor: pointer;
+                        background: $primary-color  url(/img/search_btn.png)no-repeat center center;
+                        outline: none;
+                        margin: -4px;
+                        padding: 30px;
+                    }
+                }
+                .hashtag {
+                    text-align: center;
+                    >a {
+                        margin: 10px;
+                        font-size: $font-base-size;
+                        color: #79939A;
+                        font-weight: normal;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
             &--btn {
@@ -1039,7 +1105,7 @@ section.recommendation {
                 word-break: keep-all;
                 word-wrap: break-word;
                 color: #2c503e;
-                font-size: 16px;
+                font-size: $font-base-size;
                 font-weight: 200;
                 height: 70px;
                 overflow: hidden;
