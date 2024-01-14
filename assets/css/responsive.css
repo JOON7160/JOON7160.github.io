@@ -263,6 +263,10 @@
     width: 100%;
     font-size: 13px;
   }
+  section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .title {
+    font-size: 13px;
+    white-space: nowrap;
+  }
   section.recommendation .swiper-control {
     padding: 0 10px;
   }
@@ -540,7 +544,12 @@
   }
   section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .content-top .pop {
     width: 100%;
+    font-size: 12px;
+  }
+  section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .txt .title {
     font-size: 13px;
+    white-space: nowrap;
+    border: 1px solid #000;
   }
   section.recommendation .swiper-control {
     padding: 0 10px;

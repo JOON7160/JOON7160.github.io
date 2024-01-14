@@ -300,6 +300,10 @@
                                     font-size: 13px;
                                 }
                             }
+                            .title {
+                                font-size: 13px;
+                                white-space: nowrap;
+                            }
                         }
                     }
                 }
@@ -644,7 +648,14 @@
                                 }
                                 .pop {
                                     width: 100%;
+                                    font-size: 12px;
+                                }
+                            }
+                            .txt {
+                                .title {
                                     font-size: 13px;
+                                    white-space: nowrap;
+                                    border: 1px solid #000;
                                 }
                             }
                         }
@@ -697,7 +708,6 @@ section.notice {
                                 .date {
                                     flex: 1;
                                 }
-
                             }
                         }
                     }
@@ -729,9 +739,6 @@ footer {
                 }
                 ul {
                     flex-wrap: wrap;
-                    li {
-                        // flex: 1;
-                    }
                 }
             }
             .f-link {

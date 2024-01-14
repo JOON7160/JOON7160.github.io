@@ -941,7 +941,7 @@ section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simu
   color: #fff;
 }
 section.simulation .simulation-swiper .swiper-wrapper .swiper-slide-active .simulation-content .txt {
-  width: 100;
+  width: 100%;
   text-align: center;
   margin: 0;
 }
